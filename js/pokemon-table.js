@@ -1,17 +1,17 @@
-'use strict';
+// 'use strict';
 
-import html from '..html.js';
+import html from './html.js';
 
-function makeRow('pokedex-body');
+const tableBody = document.getElementById('pokedex-body');
 
 function makeRow(pokemun) {
     return html`<tr>
         <td>${pokemun.pokemon}</td>
-        <td>${pokemun.image}</td>
-        <td>${pokemun.base-experience}</td>
+        <td><img src= ${pokemun.url_image} style="width:50px"></td>
+        <td>${pokemun.base_experience}</td>
         <td>${pokemun.type_1}</td>
         <td>${pokemun.type_2}</td>
-        <td>${pokemun.ability-hidden}</td>
+        <td>${pokemun.ability_hidden}</td>
     </tr>`;
 }
 
