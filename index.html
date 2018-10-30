@@ -11,7 +11,7 @@
 <body>
     <header>
         <img class="logo" src="assets/logo.png">
-        <h1>Contacts</h1>
+        <h1>Pokemon Characters</h1>
     </header>
     
     <main>    
@@ -22,25 +22,29 @@
                 <input required id="filter-name">
             </label>
             <label>
-                Tags:
-                <input required id="filter-tags">
+                Type One:
+                <input required id="filter-type-01">
+            </label>
+            <label>
+                Type Two:
+                <input required id="filter-type-02">
             </label>
         </section>
 
         <section>
-            <h2>Contacts</h2>
+            <h2>Characters</h2>
             <table>
-                <thead id="contacts-header">
+                <thead id="pokemon-header">
                     <tr>
-                        <td class="sort asc">First</td>
-                        <td>Last</td>
-                        <td>Active</td>
-                        <td>Email</td>
-                        <td>Phone</td>
-                        <td>Tags</td>
+                        <td>POKEMON</td>
+                        <td>IMAGE</td>
+                        <td>TYPE ONE</td>
+                        <td>TYPE TWO</td>
+                        <td>HP</td>
+                        <td>ATTACK</td>
                     </tr>
                 </thead>
-                <tbody id="contacts-body">
+                <tbody id="pokemon-body">
                    
                 </tbody>
             </table>
@@ -49,6 +53,5 @@
     </main>
 
     <script type="module" src="js/components/app.js"></script>
-    <script type="module" src="array-methods.js"></script>
 </body>
-</html>
+</html> 
