@@ -16,4 +16,21 @@ function makeRow(pokemon) {
     </tr>`;
 }
 
-console.log(makeRow);
+const pokemonTable = {
+    init(pokemons) {
+        for(let i = 0; i < pokemons.length; i++) {
+            const tr = makeRow(pokemons[i]);
+            tableBody.appendChild(tr);
+        }
+    },
+    update(pokemons) {
+        //remove existing rows
+        while(tableBody.lastElementChild) {
+            tableBody.lastElementChild.remove();
+        }
+        //add new rows
+        pokemonTable.init(pokemons);
+    }
+};
+
+export default pokemonTable;

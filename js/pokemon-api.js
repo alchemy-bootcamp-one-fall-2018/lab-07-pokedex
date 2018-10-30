@@ -1,11 +1,11 @@
 /*eslint-disable no-console */
 
-import pokemon from './data/pokedex.js';
-console.log(pokemon);
+import pokemons from './data/pokedex.js';
+console.log(pokemons);
 
 const pokemonApi = {
     getAll() {
-        return pokemon;
+        return pokemons;
     }
 };
 
