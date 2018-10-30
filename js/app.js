@@ -6,13 +6,14 @@ const pokemons = pokemonsApi.getAll();
 
 pokemonsTable.init(pokemons);
 
-pokemonsFilter.init(function(typeFilter, nameFilter, attackMinFilter, defenseMinFilter) {
+pokemonsFilter.init(function(typeFilter, nameFilter, attackMinFilter, defenseMinFilter, hpMinFilter) {
     
     let filtered;
 
-    if(typeFilter || nameFilter || attackMinFilter || defenseMinFilter) {
+    if(typeFilter || nameFilter || attackMinFilter || defenseMinFilter || hpMinFilter) {
 
         typeFilter = typeFilter.toLowerCase();
+        nameFilter = nameFilter.toLowerCase();
     
         filtered = pokemons.filter(function(pokemon) {
             const hasType = !typeFilter
@@ -26,7 +27,9 @@ pokemonsFilter.init(function(typeFilter, nameFilter, attackMinFilter, defenseMin
 
             const hasDefense = !defenseMinFilter || pokemon.defense > defenseMinFilter;
 
-            return hasType && hasName && hasAttack && hasDefense;
+            const hasHp = !hpMinFilter || pokemon.hp > hpMinFilter;
+
+            return hasType && hasName && hasAttack && hasDefense && hasHp;
         });
     }
     else {

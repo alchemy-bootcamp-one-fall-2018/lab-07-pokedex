@@ -14,7 +14,6 @@
     
     <main>    
         <section id="filter" class="secondary">
-            <h2>Search</h2>
             <label>
                 Name:
                 <input id="filter-name">
@@ -25,16 +24,20 @@
             </label>
             <label>
                 Attack:
-                <input id="filter-attack">
+                <input type="number" id="filter-attack">
             </label>
             <label>
                 Defense:
-                <input id="filter-defense">
+                <input type="number" id="filter-defense">
+            </label>
+            <label>
+                Health Points:
+                <input type="number" id="filter-hp">
             </label>
         </section>
 
-        <section>
-            <h2>Contacts</h2>
+        <section class="table-section">
+            <h2>Gotta Catch Em All!</h2>
             <table>
                 <thead id="pokemon-header">
                     <tr>
