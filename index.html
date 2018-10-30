@@ -14,29 +14,31 @@
         <h1>Pokedex Explorer</h1>
     </header>
     <main>
-        <section>
-            <h2>Filter your results</h2>
+
+        <section id="filter" class="secondary">
+            <h2>Search:</h2>
                 <label>
                     Name
-                    <input>
+                    <input required id="filter-name">
                 </label>
                 <label>
                     Type 1
-                    <input>
+                    <input required id="filter-type1">
                 </label>
                 <label>
                     Type 2
-                    <input>
+                    <input required id="filter-type2">
                 </label>
                 <label>
                     Speed
-                    <input>
+                    <input required id="filter-speed">
                 </label>
                 <label>
                     Attack
-                    <input>
+                    <input required id="filter-attack">
                 </label>
         </section>
+
         <section>
             <h2>Results</h2>
             <table>

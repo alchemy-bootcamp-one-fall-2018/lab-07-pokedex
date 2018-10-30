@@ -1,4 +1,4 @@
-// syntax highlighting for html in pokemon-table.js template
+// adds syntax highlighting for html in pokemon-table.js template
 
 export default function html(strings, ...values) {
     let htmlString = String.raw(strings, ...values);
