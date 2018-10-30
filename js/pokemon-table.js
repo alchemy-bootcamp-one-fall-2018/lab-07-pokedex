@@ -5,9 +5,8 @@ const tableBody = document.getElementById('pokemon-body');
 
 function makePokemon(pokemon) {
 
-    return html ` /*html*/
+    return html`
         <tr>
-            <td>${pokemon.url_image}</td>
             <td>${pokemon.name}</td>
             <td>${pokemon.type_1}</td>
             <td>${pokemon.type_2}</td>
@@ -17,12 +16,12 @@ function makePokemon(pokemon) {
         </tr>`;
 }
 
-const  pokemonTable = {
+const pokemonTable = {
 
     init(pokemon) {
 
         for(let i = 0; i < pokemon.length; i++) {
-            const tr = makePokemon(pokemon[1]);
+            const tr = makePokemon(pokemon[i]);
             tableBody.appendChild(tr);
         }
     }
