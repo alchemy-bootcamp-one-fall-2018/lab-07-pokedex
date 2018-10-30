@@ -1,18 +1,23 @@
 table {
     width:100%;
     border-collapse: collapse;
+    font-family: 'Courier New', Courier, monospace;
 }
 thead{
-    font-weight: bold;
     font-size: 14px;
     background: black;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
 }
 td {
     padding: 7px 0;
     white-space: nowrap;
 }
+
+#table-body {
+    text-transform: uppercase;
+}
+
+text-transform: uppercase;
 tr:nth-child(even){
     background: #7e7e7e;
     color: white;
