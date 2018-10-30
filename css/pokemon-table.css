@@ -1,0 +1,28 @@
+img {
+    height: 100px;
+    width: 100px;
+}
+
+td:first-letter {
+    text-transform: capitalize;
+}
+
+tr:nth-child(even) {
+    background: lightgrey;
+}
+
+.table-section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#pokemon-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#pokemon-body {
+    text-align: center;
+}
