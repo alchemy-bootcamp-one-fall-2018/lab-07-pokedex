@@ -1,20 +1,28 @@
+// imports HTML function from html file
 import html from './html.js';
+
+//defines where to place the template in the HTML DOC
 
 const tableBody = document.getElementById('pokemon-body');
 
+// Function creates and defines the template to place data in
 
 function makePokemon(pokemon) {
 
     return html`
         <tr>
-            <td>${pokemon.name}</td>
+            <td>${pokemon.color_1}</td>
+            <td>${pokemon.speed}</td>
+            <td>${pokemon.pokemon}</td>
             <td>${pokemon.type_1}</td>
             <td>${pokemon.type_2}</td>
             <td>${pokemon.attack}</td>
             <td>${pokemon.defense}</td>
-            <td>${pokemon.evolution_chain_id}</td>
+            <td>${pokemon.shape}</td>
         </tr>`;
 }
+
+// When this function is called, iterate through all the pokemon and fill in the template with data and append to the HTML document
 
 const pokemonTable = {
 
@@ -26,6 +34,8 @@ const pokemonTable = {
         }
     }
 };
+
+
 
 
 export default pokemonTable;
