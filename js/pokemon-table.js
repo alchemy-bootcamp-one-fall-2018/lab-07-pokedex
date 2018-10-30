@@ -1,3 +1,4 @@
+import html from './html.js'; 
 const tableBody = document.getElementById('pokemon-body'); 
 
 function makeRow(pokemon) {
@@ -6,20 +7,19 @@ function makeRow(pokemon) {
         <td>${pokemon.type_1}</td>
         <td>${pokemon.type_2}</td>
         <td>${pokemon.defense}</td>
-        <td>${pokemonbase}</td> 
-        <td>${pokemon.tags.join(', ')}</td>
+        <td>${pokemon.pokebase}</td> 
     </tr>`;
 }
 
 const pokemonTable = {
     init(pokemons) {
-        pokemon.forEach(function(contact) {
-            const tr = makeRow(contact); 
+        pokemons.forEach(function(pokemon) {
+            const tr = makeRow(pokemon); 
             tableBody.appendChild(tr); 
         });
         
     }
-}, 
+}; 
 
 
 
