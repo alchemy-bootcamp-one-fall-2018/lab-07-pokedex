@@ -10,19 +10,24 @@ const pokemonFilter = {
     //what this component needs from parent
     init(onFilter) {
 
-        function handleFilter() {
+        nameInput.addEventListener('keyup', function() {
             onFilter(nameInput.value, typeInput.value, attackInput.value, weightInput.value, heightInput.value);
-        }
+        });
+        typeInput.addEventListener('keyup', function() {
+            onFilter(nameInput.value, typeInput.value, attackInput.value, weightInput.value, heightInput.value);
+        });
+        attackInput.addEventListener('keyup', function() {
+            onFilter(nameInput.value, typeInput.value, attackInput.value, weightInput.value, heightInput.value);
+        });
+        weightInput.addEventListener('keyup', function() {
+            onFilter(nameInput.value, typeInput.value, attackInput.value, weightInput.value, heightInput.value);
+        });
+        heightInput.addEventListener('keyup', function() {
+            onFilter(nameInput.value, typeInput.value, attackInput.value, weightInput.value, heightInput.value);
+        });
 
-        nameInput.addEventListener('keyup', handleFilter);
-        typeInput.addEventListener('keyup', handleFilter);
-        attackInput.addEventListener('keyup', handleFilter);
-        weightInput.addEventListener('keyup', handleFilter);
-        heightInput.addEventListener('keyup', handleFilter);
-
+        console.log(onFilter);
     }
 };
-
-
 
 export default pokemonFilter;

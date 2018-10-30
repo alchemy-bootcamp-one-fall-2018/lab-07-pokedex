@@ -14,12 +14,25 @@ pokemonFilter.init(function(nameFilter, typeFilter, attackFilter, weightFilter, 
 
     let filtered;
 
-    if(nameFilter || typeFilter || attackFilter || )
+    if(nameFilter || typeFilter || attackFilter || weightFilter || heightFilter) {
+        nameFilter = nameFilter.toLowerCase();
+        typeFilter = typeFilter.toLowerCase();
 
-}
+        filtered = pokemons.filter(function(pokemon) {
+            const hasName = !nameFilter || pokemon.pokemon.toLowerCase().includes(nameFilter);
+            const hasType = !typeFilter || pokemon.type_1.toLowerCase().includes(typeFilter) || pokemon.type_2.toLowerCase().includes(typeFilter);
+            const hasAttack = !attackFilter || pokemon.attack >= attackFilter;
+            const hasWeight = !weightFilter || pokemon.weight >= weightFilter;
+            const hasHeight = !heightFilter || pokemon.height >= heightFilter;
 
-console.log(pokemons);
+            return hasName && hasType && hasAttack && hasWeight && hasHeight;
+        });
+    }
+    else {
+        filtered = pokemons;
+    }
 
-console.log(pokemonTable);
+    pokemonTable.update(filtered);
 
-console.log(pokemonFilter.init());
+});
+
