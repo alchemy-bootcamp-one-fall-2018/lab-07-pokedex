@@ -1,7 +1,8 @@
+import pokemonData from './data/pokedex.js'
 
 const pokemonApi = {
     init() {
-        console.log('pokemonApi is connected');
+        const 
     }
 
 };
