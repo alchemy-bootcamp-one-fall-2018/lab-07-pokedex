@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Poke Table</title>
+</head>
+<body>
+    <header>
+        <img class="pokemon" src="assets/pokemon/female/12.png">
+        <h1>Poke Table!</h1>
+    </header>
+    
+    <main>
+        <section id="filter">
+            <label>
+                Pokemon's Name:
+                <input required id="filter-name">
+            </label>
+            <label>
+                Type:
+                <input required id="filter-type">
+            </label>
+            <label>
+                Hit Points:
+                <input required id="filter-hp">
+            </label>
+            <label>
+                Ability:
+                <input required id="filter-ability">
+            </label>
+            <label>
+                Hidden Ability:
+                <input required id="filter-hiddenAbility">
+            </label>
+        </section>
+
+        <section id="poke-table">
+            <thead>
+                <h2>Your Poke Table awaits! Make your selections above!</h2>
+                <tr>
+                    <th>Name</th>
+                    <th>Portrait</th>
+                    <th>Types</th>
+                    <th>Hit Points</th>
+                    <th>Abilities</th>
+                    <th>Hidden Ability!</th>
+                </tr>
+            </thead>
+            <tbody id="pokemon-tbody">
+
+            </tbody>
+        </section>
+    </main>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
