@@ -1,3 +1,5 @@
+/*eslint-disable no-console */
+
 import pokemon from './data/pokedex.js';
 console.log(pokemon);
 
@@ -9,4 +11,4 @@ const pokemonApi = {
 
 console.log(pokemonApi);
 
-// export default pokemonApi;
+export default pokemonApi;

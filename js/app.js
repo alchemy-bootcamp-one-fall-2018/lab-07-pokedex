@@ -1,8 +1,7 @@
 /*eslint-disable no-console */
 
+import pokemonApi from './pokemon-api.js';
 
-//import pokemonApi from './js/pokemon-api.js';
+console.log('hi');
 
-// console.log('hi');
-
-// console.log(pokemonApi);
+console.log(pokemonApi);
