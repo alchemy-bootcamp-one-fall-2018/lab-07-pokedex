@@ -2,6 +2,6 @@
 
 import pokemonApi from './pokemon-api.js';
 
-console.log('hi');
+const pokemon = pokemonApi.getAll();
 
-console.log(pokemonApi);
+console.log(pokemon);
