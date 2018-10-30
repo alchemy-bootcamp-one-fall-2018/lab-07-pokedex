@@ -33,13 +33,13 @@ pokedexFilter.init(function(nameFilter, typeFilter, attackFilter, defenseFilter,
             const hasHp = !hpFilter
             || singlePokemon.hp >= hpFilter;
 
-        }
-        
-        )
+            return hasName && hasType && hasAttack && hasDefense && hasHp;
+
+        });
     }
-}
+    else {
+        filtered = pokemon;
+    }
 
-
-
-
-)
+    pokemonTable.update(filtered);
+});
