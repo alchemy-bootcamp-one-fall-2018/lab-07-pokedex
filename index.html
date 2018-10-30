@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pokemon-filter.css">
+    <link rel="stylesheet" href="css/pokemon-table.css">
+</head>
+<img src="./assets/logo.png" alt="alchemy logo">
+<body>
+    <header>
+        <h1>Pokemon Everyday All Day!</h1>
+    </header>
+
+    <main>
+        <section id="filter" class="secondary">
+            <h2>Search Pokemon</h2>
+            <label>
+                Name:
+                <input required id="filter-name">
+            </label>
+            <label>
+                Type 1:
+                <input required id="type-1">
+            </label>
+            <label>
+                Type 2:
+                <input required id="type-2">
+            </label>
+        </section>
+        <section>
+            <h2>Pokemon Table</h2>
+            <table>
+                <thead id="pokemon-header">
+                    <tr>
+                        <td>Name</td>
+                        <td>Species</td>
+                        <td>Attack</td>
+                        <td>Type 1</td>
+                        <td>Type 2</td>
+                    </tr>
+                </thead>
+                <tbody id="pokemon-table">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>

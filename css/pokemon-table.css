@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .8em;
+}
+thead {
+    font-weight: bold;
+}
+td {
+    padding: 7px 0;
+    white-space: nowrap;
+}
+tr:nth-child(even) {
+    background-color: lightslategray;
+}
