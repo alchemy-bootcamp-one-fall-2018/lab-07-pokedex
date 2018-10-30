@@ -6,4 +6,5 @@ pokemonTable.init();
 
 pokemonFilter.init();
 
-pokemonApi.init();
+console.table(pokemonApi.getAll());
+

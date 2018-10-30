@@ -1,8 +1,8 @@
-import pokemonData from './data/pokedex.js'
+import pokemonData from './data/pokedex.js';
 
 const pokemonApi = {
-    init() {
-        const 
+    getAll() {
+        return pokemonData;
     }
 
 };
