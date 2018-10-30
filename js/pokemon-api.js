@@ -7,6 +7,6 @@ const pokemonApi = {
     }
 };
 
-console.log()
+console.log(pokemonApi);
 
 // export default pokemonApi;
