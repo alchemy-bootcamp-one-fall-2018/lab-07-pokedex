@@ -7,8 +7,44 @@
     <title>Pokedex</title>
 </head>
 <body>
-    <header>Pokedex Go!</header>
-        <h1></h1>
+    <header>Pokedex Go!
+        <h1>Pokemon</h1>
+    </header>
     
+    <main>
+        <section id="filter" class="secondary"> 
+            <h2>Search</h2>
+            <label> 
+                Name: 
+                <input required id ="filter-name">
+            </label>
+            <label>
+                Tag:
+                <input required id="filter=tags">
+            </label>
+        </section>
+
+        <section>
+            <h2>Information</h2>
+            <table>
+                <thead id="information-header">
+                    <tr>
+                        <td class="sort asc"> Species Id </td>
+                        <td>Type 1</td>
+                        <td>Type 2</td>
+                        <td>Defense </td>
+                        <td>Attack </td>
+                        <td>Pokebase </td>
+                    </tr>
+                </thead>
+                <tbody id="pokemon-body">
+
+                </tbody>
+            </table>
+        </section>
+    
+    </main>
+    
+    <script type="module" src="js/app.js"></script>
 </body>
 </html>
