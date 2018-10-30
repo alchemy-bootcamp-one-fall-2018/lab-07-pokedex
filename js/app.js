@@ -1,12 +1,14 @@
-import pokemon from './data/pokedex.js';
+import pokeApi from './pokemon-api.js';
+import generateTable from './poke-table.js';
+import filter from './pokemon-filter.js';
 
-console.log(pokemon[0]);
 
-const pokeTable = document.getElementById('pokeTable');
-var html = '<tr>';
+const pokemon = pokeApi.getAll();
 
-for(let i = 0; i < 10; i++){
-    html += '<td>' + pokemon[i].pokemon + '</td></tr>';
-}
+generateTable.init(pokemon);
+filter.init();
 
-pokeTable.innerHTML = html;
+
+
+
+
