@@ -7,6 +7,9 @@ thead {
     font-weight: bold;
 }
 td {
+    font-weight: bold;
+    font-size: 2em;
+    border-radius: 20;
     padding: 7px 0;
     white-space: nowrap;
 }
