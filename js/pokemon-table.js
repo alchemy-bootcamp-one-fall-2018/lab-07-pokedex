@@ -5,6 +5,7 @@ const tableBody = document.getElementById('pokemon-body');
 
 console.log(tableBody);
 
+//format of how new table rows will be added to table body when called upon
 function makeRow(pokemon) {
     return html`<tr>
     <td>${pokemon.pokemon}</td>
