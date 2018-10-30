@@ -1,9 +1,9 @@
-import pokedexApi from '../pokemon-api.js'
+import pokedexApi from './pokemon-api.js'
 import pokemonTable from './pokemon-table.js'
 import pokedexFilter from './pokemon-filter.js'
 
 
-const pokedex = pokedexApi.getAll();
+const pokemon = pokedexApi.getAll();
 
 pokemonTable.init(pokemon);
 
@@ -16,9 +16,9 @@ pokedexFilter.init(function(nameFilter, typeFilter, attackFilter, defenseFilter,
         nameFilter = nameFilter.toLowerCase();
         typeFilter = typeFilter.toLowerCase();
 
-        filtered = pokemon.filter(function(contact) {
+        filtered = pokemon.filter(function(singlePokemon) {
             const hasName = !nameFilter
-            || singlePokemon.name.toLowerCase().includes(nameFilter);
+            || singlePokemon.pokemon.toLowerCase().includes(nameFilter);
 
             const hasType = !typeFilter
             || singlePokemon.type_1.toLowerCase().includes(typeFilter)
