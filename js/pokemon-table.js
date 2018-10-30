@@ -19,9 +19,15 @@ const pokemonTable = {
             tableBody.appendChild(tr); 
         });
         
+    }, 
+
+    update(pokemons) {
+        while(tableBody.lastElementChild) {
+            tableBody.lastElementChild.remove(); 
+        }
+
+        pokemonTable.init(pokemons);
     }
 }; 
-
-
 
 export default pokemonTable; 
