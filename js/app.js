@@ -17,10 +17,10 @@ pokemonFilter.init(function(nameFilter) { //, type1Filter, type2Filter) {
     let filtered;
 
     // if(nameFilter || type1Filter || type2Filter || speedFilter || attackFilter || shapeFilter) {
-    if(nameFilter) { // || type1Filter || type2Filter) {
+    if(nameFilter) {
         // yes, filter based on name
 
-        // nameFilter = nameFilter.toLowercase();
+        nameFilter = nameFilter.toLowerCase();
         // type1Filter = type1Filter.toLowercase();
         // type2Filter = type2Filter.toLowercase();
 
@@ -28,7 +28,7 @@ pokemonFilter.init(function(nameFilter) { //, type1Filter, type2Filter) {
         filtered = pokemon.filter(function(pokemon) {
 
             const hasName = !nameFilter
-             || pokemon.pokemon.includes(nameFilter);             // NUMBERS DON'T NEED TO LOWERCASE FUNCTION
+             || pokemon.pokemon.toLowerCase().includes(nameFilter);             // NUMBERS DON'T NEED TO LOWERCASE FUNCTION
             // const hasType1 = !type1Filter
             //     || pokemon.type_1.toLowercase().includes(type1Filter);
             // const hasType2 = !type2Filter
