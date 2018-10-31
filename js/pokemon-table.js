@@ -6,8 +6,8 @@ const tableBody = document.getElementById('pokedex-body');
 
 function makeRow(pokemun) {
     return html`<tr>
-        <td>${pokemun.pokemon}</td>
         <td><img src= ${pokemun.url_image} style="width:50px"></td>
+        <td>${pokemun.pokemon}</td>
         <td>${pokemun.type_1}</td>
         <td>${pokemun.type_2}</td>
         <td>${pokemun.base_experience}</td>

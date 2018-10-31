@@ -17,6 +17,10 @@
         <section id="filter">
             <h2>Filter</h2>
             <label>
+                    Pokemon:
+                    <input id="filter-pokemon">
+                </label>
+            <label>
                 Type 1:
                 <input id="filter-type1">
             </label>
@@ -25,18 +29,21 @@
                 <input id="filter-type2">
             </label>
             <label>
-                Base experience (less than or equal to):
+                Base experience (greater than/equal to):
                 <input id="filter-base">
             </label>
-
+            <label>
+                    Hidden ability:
+                    <input id="filter-ability_hidden">
+                </label>
          </section>
         
         <section>
             <table>
                 <thead id="pokedex-header">
                     <tr>
-                        <td class="sort asc">Pokemon</td>
                         <td>Image</td>
+                        <td class="sort asc">Pokemon</td>
                         <td>Type 1</td>
                         <td>Type 2</td>
                         <td>Base Experience</td>
