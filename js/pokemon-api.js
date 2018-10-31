@@ -2,7 +2,7 @@ import pokeData from './data/pokedex.js';
 
 const pokeApi = {
     
-    shortLength: 50,
+    shortLength: pokeData.length,
 
     getAll() {
         return pokeData;
