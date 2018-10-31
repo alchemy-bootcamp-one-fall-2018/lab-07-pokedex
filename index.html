@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contacts</title>
+    <title>Pokemon</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/filter.css">
 </head>
 <body>
     <header>
-        <img class="logo" src="assets/logo.png">
-        <h1>Pokemon Characters</h1>
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pokémon_logo.svg/2000px-International_Pokémon_logo.svg.png">
+        <h1>POKEMON CHARACTER VAULT</h1>
     </header>
     
     <main>    
@@ -29,19 +30,29 @@
                 Type Two:
                 <input required id="filter-type-02">
             </label>
+            <label>
+                Hit Points:
+                <input required id="filter-hp-min">
+                <input required id="filter-hp-max">
+            </label>
+            <label>
+                Attack:
+                <input required id="filter-attack-min">
+                <input required id="filter-attack-max">
+            </label>
         </section>
 
         <section>
-            <h2>Characters</h2>
+            <h2>CHARACTERS:</h2>
             <table>
                 <thead id="pokemon-header">
                     <tr>
-                        <td>POKEMON</td>
-                        <td>IMAGE</td>
-                        <td>TYPE ONE</td>
-                        <td>TYPE TWO</td>
-                        <td>HP</td>
-                        <td>ATTACK</td>
+                        <td><h3>POKEMON</h3></td>
+                        <td><h3>NAME</h3></td>
+                        <td><h3>TYPE ONE</h3></td>
+                        <td><h3>TYPE TWO</h3></td>
+                        <td><h3>HIT POINTS</h3></td>
+                        <td><h3>ATTACK</h3></td>
                     </tr>
                 </thead>
                 <tbody id="pokemon-body">

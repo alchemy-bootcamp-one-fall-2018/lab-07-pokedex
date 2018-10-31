@@ -8,17 +8,6 @@ body {
     box-sizing: border-box;
 }
 
-
-/* 
-Alchemy Brand Colors:
-#000000 black
-#FFFFFF white
-#39499B blue
-#00AA8F teal
-#EFEB3E yellow
-#EB4D5C red
-*/
-
 .action {
     background: #39499B;
     color: white;
@@ -26,7 +15,7 @@ Alchemy Brand Colors:
 }
 
 .secondary {
-    background: #00AA8F;
+    background: rgb(0, 85, 170);
     color: white;
 }
 
@@ -41,8 +30,8 @@ Alchemy Brand Colors:
 }
 
 header {
-    background: black;
-    color: white;
+    background: rgb(253, 240, 5);
+    color: rgb(0, 85, 170);
     display: flex;
     justify-content: flex-start;
     align-items: center;

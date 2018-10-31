@@ -11,10 +11,11 @@ thead {
 td {
     padding: 7px 0; 
     white-space: nowrap;
+    text-transform: uppercase;
 }
 
 tr:nth-child(even) {
-    background: pink;
+    background: rgb(250, 246, 110);
 }
 
 .sort {
@@ -28,4 +29,7 @@ tr:nth-child(even) {
 
 .sort.asc::after {
     content: "▲"
+}
+.character-pic {
+    width:20%;
 }
