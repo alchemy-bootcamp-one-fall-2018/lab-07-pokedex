@@ -4,8 +4,6 @@ const pokemonApi = {
     getAll() {
         return pokemonData;
     }
-
 };
-
 
 export default pokemonApi;

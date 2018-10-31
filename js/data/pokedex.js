@@ -1,3 +1,4 @@
+/* cSpell:disable */
 export default [
     {
         'pokemon': 'bulbasaur',
