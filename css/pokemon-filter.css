@@ -12,6 +12,7 @@ section#filter {
 input {
     margin: 2px;
     height: 2em;
+    font-size: 18px;
 }
 
 /* #button-div {

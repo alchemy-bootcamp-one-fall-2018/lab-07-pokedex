@@ -35,16 +35,18 @@ h2 {
 }
 
 main {
-    background-color: yellowgreen;
+    background-color: purple;
 }
 
 div {
     padding: 15px 0px 25px 0px;
+    background-color: yellowgreen;
 }
 
 footer {
     display: flex;
     padding: 2em;
+    background-color: yellowgreen;
 }
 
 a:hover {
@@ -52,8 +54,8 @@ a:hover {
     font-style: italic;
 }
 
-hr {
-    margin: 15px;
-    /* outline: 2px dashed red; */
+/* hr {
+    margin: 0px;
+    background-color: yellowgreen;
     border: 1px solid red;
-}
+} */

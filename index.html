@@ -18,7 +18,7 @@
         <div>
             <h2>Search:</h2>
         </div>
-        <section id="filter" class="secondary">
+        <section id="filter">
                 <label>
                     Name<br>
                     <input id="filter-name">
@@ -33,11 +33,11 @@
                 </label>
                 <label>
                     Speed<br>
-                    <input id="filter-speed">
+                    <input id="filter-speed" type="number" pattern="[-+]?[0-9]">
                 </label>
                 <label>
                     Attack<br>
-                    <input id="filter-attack">
+                    <input id="filter-attack" type="number" pattern="[-+]?[0-9]">
                 </label>
                 <label>
                     Shape<br>
@@ -47,11 +47,11 @@
                 <button>Go!</button>
             </p> -->
         </section>
-        <hr>
+        <!-- <hr> -->
         <div>
             <h2>Results:</h2>
         </div>
-        <section id="results">
+        <section id="results" style="overflow-y:scroll">
             <table id="results-table">
                 <thead id="pokemon-header">
                     <tr id="column-headings">

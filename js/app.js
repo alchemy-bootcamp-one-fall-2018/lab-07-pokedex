@@ -2,10 +2,6 @@ import pokemonApi from './pokemon-api.js';
 import pokemonTable from './pokemon-table.js';
 import pokemonFilter from './pokemon-filter.js';
 
-// function highlightInput() {
-//     document.getElementById('filter-name').focus();
-// }
-
 
 // get initial data
 const pokemon = pokemonApi.getAll();
@@ -16,23 +12,23 @@ pokemonTable.init(pokemon);
 
 // now send the events up
 // pokemonFilter.init(function(nameFilter, type1Filter, type2Filter, speedFilter, attackFilter, shapeFilter) {
-pokemonFilter.init(function(nameFilter) {//, type1Filter, type2Filter) {
+pokemonFilter.init(function(nameFilter) { //, type1Filter, type2Filter) {
 
     let filtered;
 
     // if(nameFilter || type1Filter || type2Filter || speedFilter || attackFilter || shapeFilter) {
     if(nameFilter) { // || type1Filter || type2Filter) {
         // yes, filter based on name
-       // nameFilter = nameFilter.str.toLowercase();
-        // nameFilter = nameFilter;
+
+        // nameFilter = nameFilter.toLowercase();
         // type1Filter = type1Filter.toLowercase();
         // type2Filter = type2Filter.toLowercase();
 
         filtered = pokemon.filter(function(pokemon) {
 
 
-            const hasName = !nameFilter || pokemon.name.includes(nameFilter);
-           // || pokemon.str.toLowercase().includes(nameFilter);  // NUMBERS DON'T NEED TO LOWERCASE FUNCTION
+            const hasName = !nameFilter
+             || 'pokemon'.includes.apply(nameFilter);  // NUMBERS DON'T NEED TO LOWERCASE FUNCTION
             // const hasType1 = !type1Filter
             //     || pokemon.type_1.toLowercase().includes(type1Filter);
             // const hasType2 = !type2Filter
@@ -46,10 +42,10 @@ pokemonFilter.init(function(nameFilter) {//, type1Filter, type2Filter) {
             return hasName; // && hasType1 && hasType2 && hasSpeed && hasAttack && hasShape;
         });
     }
-    // else {
-    //     // if no then use the full list
-    //     filtered = pokemon;
-    // }
+    else {
+        // if no then use the full list
+        filtered = pokemon;
+    }
 
         // hey table, update!
     pokemonTable.update(filtered);
