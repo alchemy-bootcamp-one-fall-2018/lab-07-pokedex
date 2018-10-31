@@ -1,0 +1,22 @@
+.pokemon-body {
+    background-color: lightgray;
+    padding: 15px;
+    width: 100vw;
+    font-family: Arvo;
+    
+}
+
+table {
+    width: 100%;
+    font-size: 1.4em;
+}
+
+td {
+    padding: 30px;
+    font-size: 1.3em;
+    white-space: nowrap;
+}
+
+thead {
+    font-weight: bold;
+}
