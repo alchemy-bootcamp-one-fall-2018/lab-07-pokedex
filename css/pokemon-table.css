@@ -16,3 +16,7 @@ td {
 tr:nth-child(even) {
     background-color: lightslategray;
 }
+.pic {
+    width: 5vw;
+    border: 2px dotted 
+}
