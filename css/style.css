@@ -26,3 +26,9 @@ h1 {
   text-align: center;
   margin: 0;
 }
+
+footer {
+  height: 28px;
+  background-color: red;
+  text-align: center;
+}
