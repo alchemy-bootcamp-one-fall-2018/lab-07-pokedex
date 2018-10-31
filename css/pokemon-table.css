@@ -1,4 +1,32 @@
 
-table {
+section#results {
+    background-color: purple;
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    padding: 10px;
+    flex-flow: row wrap;
+}
+
+#results-table {
     background-color: lightcoral;
+    width: 100%;
+}
+
+thead {
+    font-weight: bold;
+    color: purple;
+}
+
+td {
+    background-color: aqua;
+    height: 2px;
+}
+
+tr:nth-child(even) {
+    background-color: aquamarine;
+}
+
+img {
+    width: 45px;
 }

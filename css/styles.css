@@ -1,18 +1,31 @@
 * {
     font-family: Helvetica, sans-serif;
-    box-sizing: border-box;
-    
+    /* box-sizing: border-box; */
+    margin: 0px auto;
 }
 
 /* ----------- Body > Header styles ----------- */
-.logo {
-    width: 15%;
+header {
+    background-color: aqua;
 }
+
+.logo {
+    width: auto;
+    /* align-content: center; */
+}
+
 h1 {
     color: purple;
     background-color: red;
     font-style: italic;
-    padding: 2px 2px 2px 2px;
-    margin: 2px 2px 2px 2px;
+    padding: 2px;
+    text-align: center;
 }
 
+/* ----------- Body > Main styles ----------- */
+h2 {
+    color: purple;
+}
+main {
+    background-color: yellowgreen;
+}

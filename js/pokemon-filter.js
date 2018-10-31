@@ -4,6 +4,7 @@ const type1Input = document.getElementById('filter-type1');
 const type2Input = document.getElementById('filter-type2');
 const speedInput = document.getElementById('filter-speed');
 const attackInput = document.getElementById('filter-attack');
+const shapeInput = document.getElementById('filter-shape');
 
 const pokemonFilter = {
     // next line is what it needs from parent

@@ -10,7 +10,7 @@ pokemonTable.init(pokemon);
 
 
 // now send the events up
-pokemonFilter.init(function(nameFilter, type1Filter, type2Filter, speedFilter, attackFilter) {
+pokemonFilter.init(function(nameFilter, type1Filter, type2Filter, speedFilter, attackFilter, shapeFilter) {
 
     let filtered;
 

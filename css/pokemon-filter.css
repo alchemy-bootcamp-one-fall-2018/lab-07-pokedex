@@ -1,5 +1,13 @@
 
-/* ----------- Body > Main styles ----------- */
 section#filter {
-    background-color: lightgreen;
+    background-color: yellowgreen;
+    display: flex;
+    order: 1;
+    flex-direction: column;
+    padding: 10px;
+    flex-flow: row wrap;
+}
+
+input {
+    outline: 1px solid red;
 }

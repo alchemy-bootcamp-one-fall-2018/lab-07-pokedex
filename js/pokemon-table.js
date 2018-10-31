@@ -8,7 +8,9 @@ function makeRow(pokemon) {
         <td>${pokemon.type_1}</td>
         <td>${pokemon.type_2}</td>
         <td>${pokemon.speed}</td>
-        <td>${pokemon.attack.join(', ')}</td>
+        <td>${pokemon.attack}</td>
+        <td>${pokemon.shape}</td>
+        <td><img src="assets/pokemon/${pokemon.id}.png">
     </tr>`;
 }
 

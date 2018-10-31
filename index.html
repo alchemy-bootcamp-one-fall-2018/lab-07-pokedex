@@ -4,43 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pokedex Explorer</title>
+    <title>Pokedex Explorer!</title>
     <link rel="stylesheet" href="./css/pokemon-table.css">
     <link rel="stylesheet" href="./css/pokemon-filter.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
-        <img src="assets/carilogo.png" alt="logo" class="logo">
-        <h1>Pokedex Explorer</h1>
+        <img src="assets/pokemon/89.png" alt="logo" class="logo">
+        <h1>Pokedex Explorer!</h1>
     </header>
     <main>
-        <section id="filter" class="secondary">
+        <div>
             <h2>Search:</h2>
+        </div>
+        <section id="filter" class="secondary">
                 <label>
-                    Name
+                    Name<br>
                     <input required id="filter-name">
                 </label>
                 <label>
-                    Type 1
+                    Type 1<br>
                     <input required id="filter-type1">
                 </label>
                 <label>
-                    Type 2
+                    Type 2<br>
                     <input required id="filter-type2">
                 </label>
                 <label>
-                    Speed
+                    Speed<br>
                     <input required id="filter-speed">
                 </label>
                 <label>
-                    Attack
+                    Attack<br>
                     <input required id="filter-attack">
                 </label>
+                <label>
+                    Shape<br>
+                    <input required id="filter-shape">
+                </label>
+                <button>Go!</button>
         </section>
-        <section>
-            <h2>Results</h2>
-            <table>
+        <div>
+            <h2>Results:</h2>
+        </div>
+        <section id="results">
+            <table id="results-table">
                 <thead id="pokemon-header">
                     <tr>
                         <td>Name</td>
@@ -48,6 +57,8 @@
                         <td>Type 2</td>
                         <td>Speed</td>
                         <td>Attack</td>
+                        <td>Shape</td>
+                        <td>Image</td>
                     </tr>
                 </thead>
                 <tbody id="pokemon-table-body">
