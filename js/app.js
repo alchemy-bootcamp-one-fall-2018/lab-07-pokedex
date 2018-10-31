@@ -20,7 +20,7 @@ pokemonFilter.init(function(type1Filter, type2Filter, attackFilter, ability1Filt
         type1Filter = type1Filter.toLowerCase();
         type2Filter = type2Filter.toLowerCase();
         ability1Filter = ability1Filter.toLowerCase();
-        eggGroup1Filter = ability1Filter.toLowerCase();
+        eggGroup1Filter = eggGroup1Filter.toLowerCase();
   
         filtered = pokemon.filter(function(pokemon) {
             const hasType1 = !type1Filter
@@ -30,12 +30,12 @@ pokemonFilter.init(function(type1Filter, type2Filter, attackFilter, ability1Filt
               || pokemon.type_2.toLowerCase().includes(type2Filter);
               
             const hasAttack = !attackFilter 
-              || pokemon.attack <= attackFilter;
+              || pokemon.attack >= attackFilter;
               
             const hasAbility1 = !ability1Filter 
                 || pokemon.ability_1.toLowerCase().includes(ability1Filter);
 
-            const hasEggGroup1 = !ability1Filter 
+            const hasEggGroup1 = !eggGroup1Filter 
                 || pokemon.egg_group_1.toLowerCase().includes(eggGroup1Filter);
 
 

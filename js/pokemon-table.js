@@ -16,12 +16,7 @@ function makeRow(pokemon) {
 
 const pokemonTable = {
     init(pokemon) {
-      // array method???
-      // contacts.forEach(function(contact) {
-      //     const tr = makeRow(contact);
-      //     tableBody.appendChild(tr);
-      // });
-
+      
         for(let i = 0; i < pokemon.length; i++) {
             const tr = makeRow(pokemon[i]);
             tableBody.appendChild(tr);

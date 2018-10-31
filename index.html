@@ -1,67 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Pokedex Explorer</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/pokemon-table.css">
-  <link rel="stylesheet" href="css/pokemon-filter.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokedex Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pokemon-table.css">
+    <link rel="stylesheet" href="css/pokemon-filter.css">
 </head>
 <body>
-  <header>
-    <img class="logo" src="assets/logo.png">
-    <h1>Pokedex Explorer</h1>
-</header>
+    <header>
+        <img class="logo" src="assets/logo.png">
+        <h1>Pokedex Explorer</h1>
+    </header>
 
-<main>    
-    <section id="filter" class="secondary">
-        <h2>Search</h2>
-        <label>
-            Type1:
-            <input required id="filter-type1">
-        </label>
-        <label>
-            Type2:
-            <input required id="filter-type2">
-        </label>
-        <label>
-            Attack:
-            <input required id="filter-attack">
-        </label>
-        <label>
-            Ability1:
-            <input required id="filter-ability1">
-        </label>
-        <label>
-            Egg Group1:
-            <input required id="filter-egg-group1">
-        </label>
-    </section>
+    <main>    
+        <section id="filter" class="secondary">
+            <h2>Search</h2>
+            <label>
+                Type1:
+                <input required id="filter-type1">
+            </label>
+            <label>
+                Type2:
+                <input required id="filter-type2">
+            </label>
+            <label>
+                Attack:
+                <input required id="filter-attack">
+            </label>
+            <label>
+                Ability1:
+                <input required id="filter-ability1">
+            </label>
+            <label>
+                Egg Group1:
+                <input required id="filter-egg-group1">
+            </label>
+        </section>
 
-    <section>
-        <h2>Pokemon</h2>
-        <table>
-            <thead id="pokemon-header">
-                <tr>
-                    <td></td>
-                    <td>Pokemon</td>
-                    <td>Type1</td>
-                    <td>Type2</td>
-                    <td>Attack</td>
-                    <td>Ability1</td>
-                    <td>EggGroup1</td>
-                </tr>
-            </thead>
-            <tbody id="pokemon-body">
-               
-            </tbody>
-        </table>
-    </section>
+        <section>
+            <h2>Pokemon</h2>
+            <table>
+                <thead id="pokemon-header">
+                    <tr>
+                        <td></td>
+                        <td>Pokemon</td>
+                        <td>Type1</td>
+                        <td>Type2</td>
+                        <td>Attack</td>
+                        <td>Ability1</td>
+                        <td>EggGroup1</td>
+                    </tr>
+                </thead>
+                <tbody id="pokemon-body">
+                </tbody>
+            </table>
+        </section>
 
-</main>
+    </main>
 
-<script type="module" src="js/app.js"></script>
+    <script type="module" src="js/app.js"></script>
 </body>
 </html>

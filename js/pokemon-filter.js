@@ -32,13 +32,6 @@ const pokemonFilter = {
             onFilter(type1Input.value, type2Input.value, attackInput.value, ability1Input.value, eggGroup1Input.value);
         });
 
-        // same as above, but with single listening function:
-
-        // function handleFilter() {
-        //     onFilter(type1Input.value, type2Input.value);
-        // }
-        // type1Input.addEventListener('keyup', handleFilter);
-        // type2Input.addEventListener('keyup', handleFilter);
     }
 };
 
