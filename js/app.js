@@ -6,15 +6,15 @@ const pokedex = pokeApi.getAll();
 
 pokeTable.init(pokedex);
 
-pokeFilter.init(function(nameFilter, type_1Filter, type_2Filter, ability1Filter, ability2Filter) {
+pokeFilter.init(function(nameFilter, type_1Filter, type_2Filter, ability1Filter, hpFilter) {
     let filtered;
 
-    if(nameFilter || type_1Filter || type_2Filter || ability1Filter || ability2Filter) {
+    if(nameFilter || type_1Filter || type_2Filter || ability1Filter || hpFilter) {
         nameFilter = nameFilter.toLowerCase();
         type_1Filter = type_1Filter.toLowerCase();
         type_2Filter = type_2Filter.toLowerCase();
         ability1Filter = ability1Filter.toLowerCase();
-        ability2Filter = ability2Filter.toLowerCase();
+        //hpFilter = hpFilter.toLowerCase();
 
         filtered = pokedex.filter(function(pokemons) {
             const hasPokemon = !nameFilter
@@ -25,10 +25,10 @@ pokeFilter.init(function(nameFilter, type_1Filter, type_2Filter, ability1Filter,
             || pokemons.type_2.toLowerCase().includes(type_2Filter); // fixed! - ''
             const hasAbility1 = !ability1Filter
             || pokemons.ability_1.toLowerCase().includes(ability1Filter); // fixed! ''
-            const hasAbility2 = !ability2Filter
-            || pokemons.ability_2.toLowerCase().includes(ability2Filter);  // Work out how to make numeric work
+            const hasHp = !hpFilter
+            || pokemons.hp >= hpFilter;  // Work out how to make numeric work
 
-            return hasPokemon && hasType1 && hasType2 && hasAbility1 && hasAbility2;
+            return hasPokemon && hasType1 && hasType2 && hasAbility1 && hasHp;
         });
     }
     else {
