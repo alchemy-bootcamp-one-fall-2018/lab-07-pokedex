@@ -5,4 +5,10 @@ const pokemons = pokemonApi.getAll();
 
 pokemonsTable.init(pokemons);
 
+pokemonsFilter.init(function(nameFilter){
+    let filtered;
 
+    if(nameFilter) {
+        nameFilter = nameFilter.toLowerCase();   //filters based on name (pokemon.pokemon)
+    }
+})
