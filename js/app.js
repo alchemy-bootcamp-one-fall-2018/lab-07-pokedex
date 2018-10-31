@@ -25,7 +25,7 @@ pokemonFilter.init(function(nameFilter) { //, type1Filter, type2Filter) {
         // type2Filter = type2Filter.toLowercase();
 
         
-        filtered = pokemon.filter(function(pokemon) {
+        filtered = pokemon.filter(function() {
 
             const hasName = !nameFilter
              || 'pokemon'.includes(nameFilter);             // NUMBERS DON'T NEED TO LOWERCASE FUNCTION
