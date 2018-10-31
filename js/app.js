@@ -1,33 +1,28 @@
 import pokemonApi from './pokemon-api.js';
 import pokemonsTable from './pokemon-table.js';
 import pokemonsFilter from './pokemon-filter.js';
+import pokemonCount from './pokemon-count.js';
 
 const pokemons = pokemonApi.getAll();
 
 pokemonsTable.init(pokemons);    //data down
 
+pokemonCount.init(pokemons.length);
+
 //data down
-pokemonsFilter.init(function(pokemonFilter, type_1Filter, 
-    type_2Filter, hpFilter, ability_1Filter, ability_2Filter, 
-    ability_hiddenFilter) {
+pokemonsFilter.init(function(pokemonFilter, typeFilter) {
         
     let filtered;
         
-    if(pokemonFilter || type_1Filter || type_2Filter 
-            || hpFilter || ability_1Filter || ability_2Filter 
-            || ability_hiddenFilter) {
+    if(pokemonFilter || typeFilter) {
                
         filtered = pokemons.filter(function(pokemon) { 
             const hasPokemon = !pokemonsFilter || pokemon.pokemon.includes(pokemonFilter);
-            const hasType1 = !type_1Filter || pokemon.type_1.includes(type_1Filter);
-            const hasType2 = !type_2Filter || pokemon.type_2.includes(type_2Filter);
-            const hasHp = !hpFilter || pokemon.hp.includes(hpFilter);
-            const hasAbility1 = !ability_1Filter || pokemon.ability_1.includes(ability_1Filter);
-            const hasAbility2 = !ability_2Filter || pokemon.ability_2.includes(ability_2Filter);
-            const hasHidden = !ability_hiddenFilter || pokemon.ability_hiddenFilter.includes(ability_hiddenFilter); 
-             
-            return hasPokemon && hasType1 && hasType2 || hasHp
-                || hasAbility1 || hasAbility2 || hasHidden;
+            const hasType = !typeFilter 
+                || pokemon.type_1.includes(typeFilter)
+                || pokemon.type_2.includes(typeFilter);
+              
+            return hasPokemon && hasType;
 
         }); 
     } else {
@@ -35,4 +30,5 @@ pokemonsFilter.init(function(pokemonFilter, type_1Filter,
     }    
             
     pokemonsTable.update(filtered);
+    pokemonCount.update(filtered.length);
 });

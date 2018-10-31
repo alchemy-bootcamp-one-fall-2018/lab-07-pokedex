@@ -17,7 +17,7 @@ function makeRow(pokemon) {
 }
 
 const pokemonsTable = {                                //here is where remove and add for filter goes
-    init(pokemons) {
+    init: function(pokemons) {
         for(let i = 0; i < pokemons.length; i++) {
             const tr = makeRow(pokemons[i]);
             tableBody.appendChild(tr);  
