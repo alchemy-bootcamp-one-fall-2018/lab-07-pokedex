@@ -44,14 +44,14 @@ pokemonFilter.init(function(nameFilter, type1Filter, type2Filter, shapeFilter, s
             return hasName && hasType1 && hasType2 && hasShape && hasSpeed && hasAttack;
         });
     }
-    if(filtered.length === 0) {
-        noResultsResponse.innerHTML = 'No matching results';
-        headers.classList.add('hidden');
-        // else  {
-        //     noResultsResponse.classList.add('hidden');
-        //     headers.classList.remove('hidden');
-        // }
-    }
+    // if(filtered.length <= 0) {
+    //     noResultsResponse.innerHTML = 'No matching results';
+    //     headers.classList.add('hidden');
+    //     else  {
+    //         noResultsResponse.classList.add('hidden');
+    //         headers.classList.remove('hidden');
+    //     }
+    // }
     else {
         // if no then use the full list
         filtered = pokemon;
