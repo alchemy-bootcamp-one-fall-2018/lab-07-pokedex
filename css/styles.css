@@ -6,9 +6,9 @@
 
 /* ----------- Body > Header styles ----------- */
 body {
-    display: inline-block
-    align-content; center;
-    background-color: yellowgreen;
+    display: block;
+    background-color: purple;
+    align-content: center;
 }
 
 header {
