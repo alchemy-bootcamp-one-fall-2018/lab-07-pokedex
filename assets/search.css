@@ -1,0 +1,28 @@
+h1 {
+    color: red;
+    font-size: 3em;
+    text-align: center;
+    background-color: rgba(0, 2, 97, .4);
+    padding: 20px;
+    border: 5px solid rgba(127, 0, 0, .4);
+    border-radius: 10px;
+}
+h2 {
+    background: rgba(255, 255, 255, .4);
+    font-size: 2em;
+    text-align: center;
+}
+.secondary {
+    color: white;
+    background-color: rgba(0, 2, 97, .4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px 0;
+    border: 5px solid rgba(127, 0, 0, .4);
+    border-radius: 10px;
+}
+#contacts-header {
+    color: white;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/search.css">
+    <title>Connor's Pokedex</title>
+</head>
+<body>
+    <main>
+        <h1>
+        <img src="https://media0.giphy.com/media/sBboI8Q1YGQEM/giphy.gif?cid=3640f60_" width="34">
+        Pokédex
+        <img src="https://media0.giphy.com/media/sBboI8Q1YGQEM/giphy.gif?cid=3640f60_" width="34">
+        </h1>    
+        <h2>Search Filter</h2>
+        <section id="filter" class="secondary">
+            <label>
+                Name:
+                <input required id="filter-name">
+            </label>
+            <label>
+                Type:
+                <input required id="filter-type">
+            </label>
+            <br />
+            <label>
+                Min HP:
+                <input id="filter-min-hp" type="number">
+            </label>
+            <label>
+                Max HP:
+                <input id="filter-max-hp" type="number">
+            </label>
+            <br />
+            <label>
+                Min ATK:
+                <input id="filter-min-atk" type="number">
+            </label>
+            <label>
+                Max ATK:
+                <input id="filter-max-atk" type="number">
+            </label>
+            <br />
+            <label>
+                Min DEF:
+                <input id="filter-min-def" type="number">
+            </label>
+            <label>
+                Max DEF:
+                <input id="filter-max-def" type="number">
+            </label>
+            <br />
+            <label>
+                Min Sp ATK:
+                <input id="filter-min-spatk" type="number">
+            </label>
+            <label>
+                Max Sp ATK:
+                <input id="filter-max-spatk" type="number">
+            </label>
+            <br />
+            <label>
+                Min Sp DEF:
+                <input id="filter-min-spdef" type="number">
+            </label>
+            <label>
+                Max Sp DEF:
+                <input id="filter-max-spdef" type="number">
+            </label>
+            <br />
+            <label>
+                Min Speed:
+                <input id="filter-min-speed" type="number">
+            </label>
+            <label>
+                Max Speed:
+                <input id="filter-max-speed" type="number">
+            </label>
+        </section>
+
+        <section>
+            <h2>
+            <img src="https://www.serebii.net/pokedex-rs/icon/003.gif">
+            <img src="https://www.serebii.net/pokedex-rs/icon/006.gif">
+            <img src="https://www.serebii.net/pokedex-rs/icon/009.gif">
+            <img src="https://www.serebii.net/pokedex-rs/icon/154.gif">
+            <img src="https://www.serebii.net/pokedex-rs/icon/157.gif">
+            <img src="https://www.serebii.net/pokedex-rs/icon/160.gif">
+            <img src="https://www.serebii.net/pokedex-rs/icon/254.gif">
+            <img src="https://www.serebii.net/pokedex-rs/icon/257.gif">
+            <img src="https://www.serebii.net/pokedex-rs/icon/260.gif">
+            <u>Pokémon</u>
+            <img src="https://www.serebii.net/pokedex-rs/icon/144.gif">
+            <img src="https://www.serebii.net/pokedex-rs/icon/145.gif">
+            <img src="https://www.serebii.net/pokedex-rs/icon/146.gif">
+            <img src="https://www.serebii.net/pokedex-rs/icon/243.gif">
+            <img src="https://www.serebii.net/pokedex-rs/icon/244.gif">
+            <img src="https://www.serebii.net/pokedex-rs/icon/245.gif">
+            <img src="https://www.serebii.net/pokedex-rs/icon/382.gif">
+            <img src="https://www.serebii.net/pokedex-rs/icon/383.gif">
+            <img src="https://www.serebii.net/pokedex-rs/icon/384.gif">
+            </h2>
+            <table id="table-border" align="center">
+                <thead id="contacts-header">
+                    <tr>
+                        <td class="sort asc" background-color="black">Pokémon</td>
+                        <td background-color="black">Type 1</td>
+                        <td>Type 2</td>
+                        <td>HP</td>
+                        <td>Attack</td>
+                        <td>Defense</td>
+                        <td>Sp. Attack</td>
+                        <td>Sp. Defense</td>
+                        <td>Speed</td>
+                        <td>Generation</td>
+                    </tr>
+                </thead>
+                <tbody id="pokedex-body">
+                   
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+.bug {
+    background: url('https://www.serebii.net/pokedex-rs/type/bug.gif');
+    background-repeat: no-repeat;
+}
+.dark {
+    background: url('https://www.serebii.net/pokedex-rs/type/dark.gif');
+    background-repeat: no-repeat;
+}
+.dragon {
+    background: url('https://www.serebii.net/pokedex-rs/type/dragon.gif');
+    background-repeat: no-repeat;
+}
+.electric {
+    background: url('https://www.serebii.net/pokedex-rs/type/electric.gif');
+    background-repeat: no-repeat;
+}
+.fighting {
+    background: url('https://www.serebii.net/pokedex-rs/type/fighting.gif');
+    background-repeat: no-repeat;
+}
+.fire {
+    background: url('https://www.serebii.net/pokedex-rs/type/fire.gif');
+    background-repeat: no-repeat;
+}
+.flying {
+    background: url('https://www.serebii.net/pokedex-rs/type/flying.gif');
+    background-repeat: no-repeat;
+}
+.ghost {
+    background: url('https://www.serebii.net/pokedex-rs/type/ghost.gif');
+    background-repeat: no-repeat;
+}
+.grass {
+    background: url('https://www.serebii.net/pokedex-rs/type/grass.gif');
+    background-repeat: no-repeat;
+}
+.ground {
+    background: url('https://www.serebii.net/pokedex-rs/type/ground.gif');
+    background-repeat: no-repeat;
+}
+.ice {
+    background: url('https://www.serebii.net/pokedex-rs/type/ice.gif');
+    background-repeat: no-repeat;
+}
+.normal {
+    background: url('https://www.serebii.net/pokedex-rs/type/normal.gif');
+    background-repeat: no-repeat;
+}
+.poison {
+    background: url('https://www.serebii.net/pokedex-rs/type/poison.gif');
+    background-repeat: no-repeat;
+}
+.psychic {
+    background: url('https://www.serebii.net/pokedex-rs/type/psychic.gif');
+    background-repeat: no-repeat;
+}
+.rock {
+    background: url('https://www.serebii.net/pokedex-rs/type/rock.gif');
+    background-repeat: no-repeat;
+}
+.steel {
+    background: url('https://www.serebii.net/pokedex-rs/type/steel.gif');
+    background-repeat: no-repeat;
+}
+.water {
+    background: url('https://www.serebii.net/pokedex-rs/type/water.gif');
+    background-repeat: no-repeat;
+}
+body {
+    background-image: url("https://i.ebayimg.com/images/g/~doAAOSw-itXu4Vu/s-l300.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#table-border {
+    border: 10px solid maroon;
+    border-radius: 10px;
+    background-color: rgba(0, 2, 97, .4);
+}
