@@ -1,9 +1,8 @@
 .pokemon-body {
     background-color: lightgray;
     padding: 15px;
-    width: 100vw;
+    width: 100%;
     font-family: Arvo;
-    
 }
 
 table {
@@ -21,4 +20,8 @@ td {
 
 thead {
     font-weight: bold;
+}
+
+.icon {
+    height: 100px;
 }
