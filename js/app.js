@@ -1,6 +1,6 @@
 import pokemonApi from './pokemon-api.js';
 import pokemonTable from './pokemon-table.js';
-import pokemonFilter from './pokemon-filter.js';
+// import pokemonFilter from './pokemon-filter.js';
 
 
 // get initial data
@@ -9,7 +9,7 @@ const pokemon = pokemonApi.getAll();
 // send data downward
 pokemonTable.init(pokemon);
 
-
+/*
 // now send the events up
 // pokemonFilter.init(function(nameFilter, type1Filter, type2Filter, speedFilter, attackFilter, shapeFilter) {
 pokemonFilter.init(function(nameFilter) { //, type1Filter, type2Filter) {
@@ -50,3 +50,4 @@ pokemonFilter.init(function(nameFilter) { //, type1Filter, type2Filter) {
         // hey table, update!
     pokemonTable.update(filtered);
 });
+*/
