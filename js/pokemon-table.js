@@ -22,6 +22,13 @@ const pokemonsTable = {                                //here is where remove an
             const tr = makeRow(pokemons[i]);
             tableBody.appendChild(tr);  
         }
+    },
+    update(pokemons) {
+        while(tableBody.lastElementChild) {
+            tableBody.lastElementChild.remove();
+        }
+
+        pokemonsTable.init(pokemons);
     }
 };
 

@@ -23,4 +23,4 @@ const pokemonsFilter = {
     }
 }; 
 
-export default pokemonFilter;
+export default pokemonsFilter;
