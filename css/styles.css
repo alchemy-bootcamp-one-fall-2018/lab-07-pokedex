@@ -5,8 +5,13 @@
 }
 
 /* ----------- Body > Header styles ----------- */
+body {
+    display: inline-block
+    align-content; center;
+}
+
 header {
-    background-color: aqua;
+    background-color: purple;
 }
 
 .logo {
@@ -15,9 +20,10 @@ header {
 }
 
 h1 {
-    color: purple;
-    background-color: red;
+    background-color: purple;
+    color: red;
     font-style: italic;
+    font-size: 40px;
     padding: 2px;
     text-align: center;
 }
@@ -25,10 +31,15 @@ h1 {
 /* ----------- Body > Main styles ----------- */
 h2 {
     color: purple;
+    text-align: center;
 }
 
 main {
     background-color: yellowgreen;
+}
+
+div {
+    padding: 15px 0px 25px 0px;
 }
 
 footer {
@@ -39,4 +50,10 @@ footer {
 a:hover {
     color: red;
     font-style: italic;
+}
+
+hr {
+    margin: 15px;
+    /* outline: 2px dashed red; */
+    border: 1px solid red;
 }

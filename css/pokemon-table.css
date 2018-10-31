@@ -1,16 +1,17 @@
 
 section#results {
-    background-color: purple;
+    /* background-color: purple; */
     display: flex;
     order: 2;
     flex-direction: column;
-    padding: 10px;
     flex-flow: row wrap;
 }
 
 #results-table {
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     width: 100%;
+    border-collapse: collapse;
+    text-align: center;
 }
 
 thead {
@@ -18,15 +19,26 @@ thead {
     color: purple;
 }
 
+
 td {
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 2px;
+    color: purple;
 }
 
-tr:nth-child(even) {
-    background-color: aquamarine;
+/* td:nth-child(even) {
+    background-color: yellowgreen;
+}
+
+tr:nth-child(odd) {
+    background-color: yellow;
+} */
+
+.column-headings {
+    height: 2em;
+    background-color: transparent;
 }
 
 img {
-    width: 45px;
+    width: 40px;
 }
