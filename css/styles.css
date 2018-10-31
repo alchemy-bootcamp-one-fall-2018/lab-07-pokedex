@@ -59,8 +59,14 @@ h2 a {
     color: purple;
 }
 
-/* hr {
-    margin: 0px;
+hr {
+    margin: 10px;
     background-color: yellowgreen;
-    border: 1px solid red;
-} */
+    border: 2px solid yellowgreen;
+}
+
+h3 {
+    color: purple;
+    text-align: center;
+    font-style: italic;
+}

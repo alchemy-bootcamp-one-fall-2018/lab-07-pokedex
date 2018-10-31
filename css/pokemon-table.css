@@ -18,12 +18,16 @@ section#results {
 thead {
     font-weight: bold;
     color: purple;
+    background-color: red;
 }
-
 
 td {
     background-color: yellowgreen;
     color: purple;
+}
+
+td.headers {
+    background-color: red;
 }
 
 /* td:nth-child(even) {
@@ -40,4 +44,8 @@ tr:nth-child(odd) {
 
 img {
     width: 40px;
+}
+
+.hidden {
+    display: none;
 }
