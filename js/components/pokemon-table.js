@@ -1,4 +1,4 @@
-import html from '/Users/bigho/alchemy/week2/lab-07-pokedex/js/html';
+import html from '../html.js';
 
 const tablebody = document.getElementById('pokemon-body');
 
