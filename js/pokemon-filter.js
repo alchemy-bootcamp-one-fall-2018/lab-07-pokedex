@@ -2,6 +2,7 @@
 const type1Input = document.getElementById('filter-type1');
 const type2Input = document.getElementById('filter-type2');
 const attackInput = document.getElementById('filter-attack');
+const ability1Input = document.getElementById('filter-ability1');
 
 const pokemonFilter = {
     // what does this component need from parent?
@@ -11,15 +12,19 @@ const pokemonFilter = {
         // on keypress event, call the onFilter 
         // callback with current value of the input
         type1Input.addEventListener('keyup', function() {
-            onFilter(type1Input.value, type2Input.value, attackInput.value);
+            onFilter(type1Input.value, type2Input.value, attackInput.value, ability1Input.value);
         });
         
         type2Input.addEventListener('keyup', function() {
-            onFilter(type1Input.value, type2Input.value, attackInput.value);
+            onFilter(type1Input.value, type2Input.value, attackInput.value, ability1Input.value);
         });
 
         attackInput.addEventListener('keyup', function() {
-            onFilter(type1Input.value, type2Input.value, attackInput.value);
+            onFilter(type1Input.value, type2Input.value, attackInput.value, ability1Input.value);
+        });
+        
+        ability1Input.addEventListener('keyup', function() {
+            onFilter(type1Input.value, type2Input.value, attackInput.value, ability1Input.value);
         });
 
         // same as above, but with single listening function:
