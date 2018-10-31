@@ -8,6 +8,7 @@ const pokemon = pokemonApi.getAll();
 // send data downward
 pokemonTable.init(pokemon);
 
+
 // now send the events up
 pokemonFilter.init(function(nameFilter, type1Filter, type2Filter, speedFilter, attackFilter) {
 
