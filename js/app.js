@@ -13,7 +13,6 @@ var noResultsResponse = document.getElementById(['no-results']);
 var headers = document.getElementById('column-headings');
 
 // now send the events up
-// pokemonFilter.init(function(nameFilter, type1Filter, type2Filter, speedFilter, attackFilter, shapeFilter) {
 pokemonFilter.init(function(nameFilter, type1Filter, type2Filter, shapeFilter, speedFilter, attackFilter) {
 
     let filtered;
@@ -46,15 +45,16 @@ pokemonFilter.init(function(nameFilter, type1Filter, type2Filter, shapeFilter, s
         });
     }
     if(filtered.length === 0) {
-        // console.log('test');
         noResultsResponse.innerHTML = 'No matching results';
         headers.classList.add('hidden');
+        // else  {
+        //     noResultsResponse.classList.add('hidden');
+        //     headers.classList.remove('hidden');
+        // }
     }
     else {
         // if no then use the full list
         filtered = pokemon;
-        noResultsResponse.classList.add('hidden');
-        headers.classList.remove('hidden');
     }
 
         // hey table, update!
