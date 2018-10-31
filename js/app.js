@@ -10,16 +10,17 @@ const pokemon = pokemonApi.getAll();
 pokemonTable.init(pokemon);
 
 // events up! (via callback)
-pokemonFilter.init(function(type1Filter, type2Filter, attackFilter, ability1Filter) {
+pokemonFilter.init(function(type1Filter, type2Filter, attackFilter, ability1Filter,eggGroup1Filter) {
     
     let filtered;
 
   // do we have a filter?
-    if(type1Filter || type2Filter || attackFilter || ability1Filter) {
+    if(type1Filter || type2Filter || attackFilter || ability1Filter || eggGroup1Filter) {
       // yes!, filter based on type1 or type2 or attack
         type1Filter = type1Filter.toLowerCase();
         type2Filter = type2Filter.toLowerCase();
         ability1Filter = ability1Filter.toLowerCase();
+        eggGroup1Filter = ability1Filter.toLowerCase();
   
         filtered = pokemon.filter(function(pokemon) {
             const hasType1 = !type1Filter
@@ -34,8 +35,11 @@ pokemonFilter.init(function(type1Filter, type2Filter, attackFilter, ability1Filt
             const hasAbility1 = !ability1Filter 
                 || pokemon.ability_1.toLowerCase().includes(ability1Filter);
 
+            const hasEggGroup1 = !ability1Filter 
+                || pokemon.egg_group_1.toLowerCase().includes(eggGroup1Filter);
 
-            return hasType1 && hasType2 && hasAttack && hasAbility1;
+
+            return hasType1 && hasType2 && hasAttack && hasAbility1 && hasEggGroup1;
         });
     }
     else {
