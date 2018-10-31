@@ -14,10 +14,17 @@ function makeRow(pokemon) {
 
 const pokeTable = {
     init(pokemon) {
+
         for(let i = 0; i < pokemon.length; i++) {
             const tr = makeRow(pokemon[i]);
             tableBody.appendChild(tr);
         }
+    },
+    update(pokemon) {
+        while(tableBody.lastElementChild) {
+            tableBody.lastElementChild.remove();
+        }
+        pokeTable.init(pokemon);
     }
 };
 
