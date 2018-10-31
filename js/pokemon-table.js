@@ -3,12 +3,12 @@ const tableBody = document.getElementById('pokemon-body');
 
 function makeRow(pokemon) {
     return html`<tr> 
+        <td>${pokemon.pokebase}</td> 
         <td>${pokemon.species_id}</td>
         <td>${pokemon.type_1}</td>
         <td>${pokemon.type_2}</td>
         <td>${pokemon.defense}</td>
         <td>${pokemon.attack}</td>
-        <td>${pokemon.pokebase}</td> 
     </tr>`;
 }
 
@@ -29,5 +29,6 @@ const pokemonTable = {
         pokemonTable.init(pokemons);
     }
 }; 
+
 
 export default pokemonTable; 

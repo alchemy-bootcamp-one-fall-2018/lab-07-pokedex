@@ -6,21 +6,27 @@ const pokemons = pokemonApi.getAll();
 
 pokemonTable.init(pokemons); 
 
-pokemonsFilter.init(function(nameFilter, tagsFilter){
+pokemonsFilter.init(function(nameFilter, defenseFilter, attackFilter, type1Filter, type2Filter){
     let filtered; 
 
-    if (nameFilter) {
-        nameFilter = nameFilter.toLowerCase(); 
-
-        // console.log(nameFilter); 
+    if(nameFilter || defenseFilter || attackFilter || type1Filter || type2Filter) {
+        nameFilter = nameFilter.toLowerCase();
+        console.log('type  1', type1Filter); 
+     
 
         filtered = pokemons.filter(function(pokemon){
             const hasName = !nameFilter
             || pokemon.pokemon.toLowerCase().includes(nameFilter); 
             
-        // const hasTag = !tagsFilter || pokemon.
-
-            return hasName; 
+            const hasDefense = !defenseFilter || pokemon.defense >= defenseFilter;
+            
+            const hasAttack = !attackFilter || pokemon.attack >= attackFilter; 
+            
+            const hasType1 = !type1Filter || pokemon.pokemon.toLowerCase().includes(type1Filter);
+            
+            const hasType2 = !type2Filter || pokemon.pokemon.toLowerCase().includes(type2Filter); 
+             
+            return hasName && hasDefense && hasAttack && hasType1 && hasType2; 
         
         }); 
     }

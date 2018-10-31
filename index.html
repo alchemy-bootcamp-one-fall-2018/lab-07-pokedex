@@ -18,6 +18,22 @@
                 Name: 
                 <input required id ="filter-name">
             </label>
+            <label>
+                Defense 
+                <input required id="filter-defense" type="number" min="1" max="500" value="1" >
+            </label>
+            <label>
+                Attack
+                <input required id="filter-attack" type="number" min="1" max="500" value="1">
+            </label>
+            <label>
+                Type 1
+                <input required id="filter-type1">
+            </label>
+            <label>
+                    Type 2
+                    <input required id="filter-type2">
+                </label>
         </section>
 
         <section>
@@ -25,12 +41,12 @@
             <table>
                 <thead id="information-header">
                     <tr>
-                        <td class="sort asc"> Species Id </td>
+                        <td class="sort asc"> Pokebase </td>
+                        <td> Species Id </td>
                         <td>Type 1</td>
                         <td>Type 2</td>
                         <td>Defense </td>
                         <td>Attack </td>
-                        <td>Pokebase </td>
                     </tr>
                 </thead>
                 <tbody id="pokemon-body">
