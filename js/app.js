@@ -7,33 +7,35 @@ import pokemonFilter from './pokemon-filter.js';
 //get the initial data
 const pokemonData = pokemonApi.getAll();
 
-console.log(pokemonData);
+
 
 //data flows down
 pokemonTable.init(pokemonData);
-console.log(pokemonTable);
+
 
 //events up via callback
-pokemonFilter.init(function(pokemonFilter, heightFilter, weightFilter, attackFilter, defenseFilter) {
+pokemonFilter.init(function(nameFilter, heightFilter, weightFilter, attackFilter, defenseFilter) {
     
     
     let filtered;
     //do we have a filter?
-    if(pokemonFilter || heightFilter || weightFilter || attackFilter || defenseFilter) {
+    if(nameFilter || heightFilter || weightFilter || attackFilter || defenseFilter) {
         //yes!, filter based on pokemon, height, weight, attack, or defense
-        pokemonFilter = pokemonFilter.toLowerCase();
+        nameFilter = nameFilter.toLowerCase();
        
 
         filtered = pokemonData.filter(function(pokemon) {
-            const hasPokemon = !pokemonFilter
-            || pokemon.pokemon.toLowerCase().includes(pokemonFilter);
+            const hasPokemon = !nameFilter
+            || pokemon.pokemon.toLowerCase().includes(nameFilter);
 
             const hasHeight = !heightFilter || pokemon.height >= heightFilter;
+
             const hasWeight = !weightFilter || pokemon.weight >= weightFilter;
 
             const hasAttack = !attackFilter || pokemon.attack >= attackFilter;
 
             const hasDefense = !defenseFilter || pokemon.defense >= defenseFilter;
+
             return hasPokemon && hasHeight && hasWeight && hasAttack && hasDefense;
         });
     }
