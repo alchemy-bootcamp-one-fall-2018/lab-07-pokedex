@@ -1,14 +1,22 @@
 img {
     width: 50px;
 }
+
+#pokemon-header {
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;  
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     font-size: .8em;
 }
+
 thead {
     font-weight: bold;
 }
+
 td {
     padding: 7px 0; 
     white-space: nowrap;
@@ -19,7 +27,7 @@ tr:nth-child(even) {
 }
 
 table,tr {
-    border: 10px solid black;
+    border: 5px solid black;
 }
 
 th {
