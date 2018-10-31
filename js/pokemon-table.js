@@ -4,6 +4,7 @@ const tableBody = document.getElementById('pokemon-body');
 
 function makeRow(pokemon) {
     return html`<tr>
+        <td><img class="image" src="${pokemon.url_image}"></td>
         <td>${pokemon.pokemon}</td>
         <td>${pokemon.type_1}</td>
         <td>${pokemon.type_2}</td>
