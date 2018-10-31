@@ -8,9 +8,9 @@ function makeRow(pokemun) {
     return html`<tr>
         <td>${pokemun.pokemon}</td>
         <td><img src= ${pokemun.url_image} style="width:50px"></td>
-        <td>${pokemun.base_experience}</td>
         <td>${pokemun.type_1}</td>
         <td>${pokemun.type_2}</td>
+        <td>${pokemun.base_experience}</td>
         <td>${pokemun.ability_hidden}</td>
     </tr>`;
 }
@@ -21,7 +21,15 @@ const pokedexTable = {
             const tr = makeRow(pokemun);
             tableBody.appendChild(tr);
         });
+    },
+    update(pokemon) {
+        while(tableBody.lastElementChild) {
+            tableBody.lastElementChild.remove();
+        }
+        
+        pokedexTable.init(pokemon);
     }
+    
 };
 
 export default pokedexTable;

@@ -12,16 +12,3 @@ td {
     padding: 7px 0;
     white-space: nowrap;
 }
-
-.sort {
-    white-space: nowrap;
-    padding: 0 3px;
-}
-
-.sort.desc::after {
-    content:"▼"
-}
-
-.sort.asc::after {
-    content:"▲"
-}
