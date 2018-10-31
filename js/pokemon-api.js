@@ -9,6 +9,4 @@ const pokemonApi = {
     }
 };
 
-console.log(pokemonApi);
-
 export default pokemonApi;
