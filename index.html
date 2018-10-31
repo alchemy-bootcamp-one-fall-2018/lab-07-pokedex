@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pokedex</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-    <!-- <link rel="stylesheet" href="pokemon-filter.css"> -->
-    <!-- <link rel="stylesheet" href="pokemon-table.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/pokemon-filter.css"> -->
+    <!-- <link rel="stylesheet" href="css/pokemon-table.css"> -->
 </head>
 
 <body>
@@ -16,21 +16,26 @@
     <main>
         <section id="filter">
             <h2>Search</h2>
-            <label>
-                Name:
-                <input required id="filter-name">
-            </label>
-            <!-- need to add more inputs -->
+                <label>Name:
+                    <input required id="filter-name">
+                </label>
         </section>
+                
 
+        
         <section>
-            <h2>Pokemons</h2>
+            <h3>Pokemon Table</h3>
                 <table>
                     <thead>
                         <tr>
                             <td>Name</td>
+                            <td>Type 1</td>
+                            <td>Type 2</td>
+                            <td>Ability</td>
+                            <td>Shape</td>
                         </tr>
                     </thead>
+                    
                     <tbody id="pokemon-body">
 
                     </tbody>

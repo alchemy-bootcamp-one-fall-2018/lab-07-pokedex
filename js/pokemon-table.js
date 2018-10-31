@@ -5,10 +5,14 @@ const tableBody = document.getElementById('pokemon-body');
 function makeRow(pokemon) {
     return html`<tr>
         <td>${pokemon.pokemon}</td>
-        <td>${pokemon.url_image}</td>
-
+        <td>${pokemon.type_1}</td>
+        <td>${pokemon.type_2}</td>
+        <td>${pokemon.ability_1}</td>
+        <td>${pokemon.shape}</td>
+        
         </tr>`;
 }
+
 
 const pokemonTable = {
     init(pokemons) {
