@@ -26,6 +26,20 @@ const pokeTable = {
         }
         pokeTable.init(pokemon);
     }
+
+    // init(type_1) 
+    
+    //     for(let i = 0; i < type_1.length; i++) {
+    //         const tr = makeRow(type_1[i]);
+    //         tableBody.appendChild(tr);
+    //     }
+    
+    // update(type_1) {
+    //     while(tableBody.lastElementChild) {
+    //         tableBody.lastElementChild.remove();
+    //     }
+    //     pokeTable.init(type_1);
+    // }
 };
 
 export default pokeTable;
