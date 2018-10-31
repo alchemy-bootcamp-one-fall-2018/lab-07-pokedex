@@ -23,8 +23,41 @@ pokemonTable.init(pokemon);
 // aka the Pokemon variable which is linked to ALL OUR DATA in the API
 //onFilter uses eventListener to track the KEYUP from the user
 //
-pokemonFilter.init(function(name) {
+ 
+pokemonFilter.init(function(nameFilter, typeFilter, type2Filter, attackFilter, defenseFilter) {
 
-console.log('filter on', name);
+    let filtered;
+
+    if(nameFilter || typeFilter || type2Filter || attackFilter || defenseFilter){
+
+
+        nameFilter = nameFilter.toLowerCase();
+
+
+        filtered = pokemon.filter(function(pokemon) { 
+            const hasName = ! nameFilter
+
+            || pokemon.pokemon.includes(nameFilter); 
+
+            const hasType = ! typeFilter
+            || pokemon.type_1.includes(typeFilter);
+
+            const hasType2 = ! type2Filter
+            || pokemon.type_2.includes(type2Filter);
+
+            const hasAttack = ! attackFilter
+            || pokemon.attack.includes(attackFilter);
+
+            const hasDefense = ! defenseFilter
+            || pokemon.defense.includes(defenseFilter);
+
+            return hasName && hasType && hasType2 && hasAttack & hasDefense;
+
+        });
+    }
+    else {
+        filtered = pokemon;
+    }
+    pokemonTable.update(filtered); 
 
 });

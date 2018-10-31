@@ -32,6 +32,15 @@ const pokemonTable = {
             const tr = makePokemon(pokemon[i]);
             tableBody.appendChild(tr);
         }
+    },
+    //removes all rows upon an updated search
+    update(pokemon) {
+        while(tableBody.lastElementChild) {
+            tableBody.lastElementChild.remove();
+        }
+        // creates new rows based on the search
+        pokemonTable.init(pokemon);
+
     }
 };
 

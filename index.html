@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pokemon Lab</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <img class="logo" src="assets/logo.png">
+        <img class="logo" src="assets/pokemon.png">
         <h1>Pokemon Lab</h1>
     </header>
     
@@ -17,15 +18,27 @@
             <h2>Search for Pokemon</h2>
             <label>
                 Name:
-                <input required id="filter-name">
+                <input id="filter-name">
             </label>
             <label>
                 Type:
-                <input required id="filter-type">
+                <input id="filter-type">
             </label>
-        </section>
+            <label>
+                Type2:
+                <input id="filter-type2">
+            </label>
+            <label>
+                Attack:
+            <input type="number" id="filter-attack">
+            </label>
+            <label>
+                Defense:
+                <input type="number" required id="filter-defense">
+            </label>
+         </section>
 
-        <section>
+        <section id="list"> 
             <h2>Pokemon</h2>
             <table>
                 <thead id="pokemon-header">
@@ -42,24 +55,6 @@
                     </tr>
                 </thead>
                 <tbody id="pokemon-body"></tbody>
-                    <tr>
-                        <td>image1</td>
-                        <td>name1</td>
-                        <td>type1</td>
-                        <td>type2</td>
-                        <td>Attack1</td>
-                        <td>defense1</td>
-                        <td>Hp1</td>
-                    </tr>
-                    <tr>
-                        <td>image1</td>
-                        <td>name1</td>
-                        <td>type1</td>
-                        <td>type2</td>
-                        <td>Attack1</td>
-                        <td>defense1</td>
-                        <td>Hp1</td>
-                    </tr>
 
             </table>
         </section>
