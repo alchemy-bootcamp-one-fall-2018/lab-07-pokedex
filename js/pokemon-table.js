@@ -7,8 +7,8 @@ function makeRow(pokemons) {
         <td>${pokemons.pokemon}</td>  
         <td>${pokemons.type_1}</td>  
         <td>${pokemons.type_2}</td>  
-        <td>${pokemons.speed}</td>  
-        <td>${pokemons.hp}</td>  
+        <td>${pokemons.ability_1}</td>
+        <td>${pokemons.ability_2}</td>
     </tr>`;
 }
 

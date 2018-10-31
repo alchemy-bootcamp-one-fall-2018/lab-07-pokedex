@@ -5,30 +5,30 @@ import pokeTable from './pokemon-table.js';
 const pokedex = pokeApi.getAll();
 
 pokeTable.init(pokedex);
-// my contact/contacts are both pokemon!
-pokeFilter.init(function(nameFilter, type_1Filter, type_2Filter, speedFilter, hpFilter) {
-    let filtered; //changed all pokemonfilter, type1filter, type2filter, speedfilter, and hpfilter to pokemon-filter vars
 
-    if(nameFilter || type_1Filter || type_2Filter || speedFilter || hpFilter) {
+pokeFilter.init(function(nameFilter, type_1Filter, type_2Filter, ability1Filter, ability2Filter) {
+    let filtered;
+
+    if(nameFilter || type_1Filter || type_2Filter || ability1Filter || ability2Filter) {
         nameFilter = nameFilter.toLowerCase();
         type_1Filter = type_1Filter.toLowerCase();
         type_2Filter = type_2Filter.toLowerCase();
-        speedFilter = speedFilter.toLowerCase();
-        hpFilter = hpFilter.toLowerCase();
-//all apokemon were originally "pokemon" also in p-table
-        filtered = pokedex.filter(function(pokemons) { //////error here (in console)
+        ability1Filter = ability1Filter.toLowerCase();
+        ability2Filter = ability2Filter.toLowerCase();
+
+        filtered = pokedex.filter(function(pokemons) {
             const hasPokemon = !nameFilter
             || pokemons.pokemon.toLowerCase().includes(nameFilter);
             const hasType1 = !type_1Filter
-            || pokemons.type_1Filter.toLowerCase().includes(type_1Filter); // error here
+            || pokemons.type_1.toLowerCase().includes(type_1Filter); // fixed - changed pokemons.type_1filter to pokemons.type_1
             const hasType2 = !type_2Filter
-            || pokemons.type_2Filter.toLowerCase().includes(type_2Filter); // error here
-            const hasSpeed = !speedFilter
-            || pokemons.speedFilter.toLowerCase().includes(speedFilter);   // error here
-            const hasHp = !hpFilter
-            || pokemons.hpFilter.toLowerCase().includes(hpFilter);            // error here
+            || pokemons.type_2.toLowerCase().includes(type_2Filter); // fixed! - ''
+            const hasAbility1 = !ability1Filter
+            || pokemons.ability_1.toLowerCase().includes(ability1Filter); // fixed! ''
+            const hasAbility2 = !ability2Filter
+            || pokemons.ability_2.toLowerCase().includes(ability2Filter);  // Work out how to make numeric work
 
-            return hasPokemon && hasType1 && hasType2 && hasSpeed && hasHp;
+            return hasPokemon && hasType1 && hasType2 && hasAbility1 && hasAbility2;
         });
     }
     else {
