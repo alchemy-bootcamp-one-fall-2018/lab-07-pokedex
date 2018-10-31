@@ -12,7 +12,7 @@ const filter = {
 
             console.log(sel);
             let filtered = [];
-            for(let j = 0; j < 50; j++) {
+            for(let j = 0; j < pokeApi.shortLength; j++) {
                 if(pokemon[j][sel].includes(textBox.value)) {
                     filtered.push(pokemon[j]);
                 }

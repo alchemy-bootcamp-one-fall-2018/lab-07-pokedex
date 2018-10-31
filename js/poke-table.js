@@ -1,3 +1,4 @@
+import pokeApi from './pokemon-api.js';
 
 const pokeTable = document.getElementById('pokeTable');
 const generateTable = {
@@ -5,9 +6,9 @@ const generateTable = {
     init(pokemon) {
         var html = '<tr><th>Pokemon Name</th><th>Weight</th><th>Height</th><th>Type_1</th><th>Type_2</th><th>Attack</th></tr><tr>';
 
-        var length = 50;
+        var length = pokeApi.shortLength;
 
-        if(pokemon.length < 100) {
+        if(pokemon.length < pokeApi.shortLength) {
             length = pokemon.length;
         }
         for(let i = 0; i < length; i++){
