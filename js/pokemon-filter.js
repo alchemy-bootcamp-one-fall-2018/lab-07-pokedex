@@ -3,21 +3,21 @@ import generateTable from './poke-table.js';
 
 const pokemon = pokeApi.getAll();
 const textBox = document.getElementById('textBox');
-// const select = document.getElementById('select');
 
 const filter = {
     
     init() {
-
         textBox.addEventListener('keyup', function() {
+            const sel = document.querySelector('option:checked').value;
+
+            console.log(sel);
             let filtered = [];
             for(let j = 0; j < 50; j++) {
-                if(pokemon[j].pokemon.includes(textBox.value) && textBox.value) {
+                if(pokemon[j][sel].includes(textBox.value)) {
                     filtered.push(pokemon[j]);
                 }
             }
-            // generateTable.init(filtered);
-            console.log('filtered', filtered);
+            generateTable.init(filtered);
         });
     }
 };
