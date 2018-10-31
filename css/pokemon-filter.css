@@ -14,17 +14,17 @@ input {
     height: 2em;
 }
 
-#button-div {
+/* #button-div {
     display: inline-flex;
     flex-flow: row;
-}
+} */
 
 label {
     color: purple;
     font-style: italic;
 }
 
-button {
+/* button {
 
     border-radius: 15px;
     width: 4em;
@@ -38,4 +38,4 @@ button {
 
 button:hover {
     background: yellow;
-}
+} */
