@@ -9,6 +9,8 @@
 table {
     width: 100%;
     font-size: 1.4em;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 td {
