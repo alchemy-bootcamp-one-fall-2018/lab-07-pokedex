@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon Table</title>
+    <link rel="stylesheet" href="pokemon-filter.css">
+    <link rel="stylesheet" href="pokemon-table.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tyler's Pokedex</h1>
+    </header>
+    <main>
+        <section id="filter" >
+            <h2>Search</h2>
+            <label>
+                Type 1:
+                <input id="filter-type1">
+            </label>
+            <label>
+                Type 2:
+                <input id="filter-type2">
+            </label>
+        </section>
+
+        <section>
+            <table>
+                <thead id="pokemon-header">
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Type 1</th>
+                        <th>Type 2</th>
+                        <th>Attack</th>
+                        <th>Defense</th>
+                        <th>Speed</th>
+                    </tr>
+                </thead>
+                <tbody id="pokemon-body">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html>
