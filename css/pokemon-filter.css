@@ -4,10 +4,37 @@ section#filter {
     display: flex;
     order: 1;
     flex-direction: column;
+    justify-content: space-evenly;
     padding: 10px;
     flex-flow: row wrap;
 }
 
 input {
-    outline: 1px solid red;
+    margin: 2px;
+    height: 2em;
+}
+
+#button-div {
+    display: inline-flex;
+    flex-flow: row;
+}
+
+label {
+    color: purple;
+    font-style: italic;
+}
+
+button {
+
+    border-radius: 15px;
+    width: 4em;
+    font-size: 15px;
+    color: white;
+    margin-top: 3px;
+    background-color: red;
+    justify-content: center;
+}
+
+button:hover {
+    background: purple;
 }

@@ -2,6 +2,11 @@ import pokemonApi from './pokemon-api.js';
 import pokemonTable from './pokemon-table.js';
 import pokemonFilter from './pokemon-filter.js';
 
+// function highlightInput() {
+//     document.getElementById('filter-name').focus();
+// }
+
+
 // get initial data
 const pokemon = pokemonApi.getAll();
 
@@ -15,7 +20,7 @@ pokemonFilter.init(function(nameFilter, type1Filter, type2Filter, speedFilter, a
     let filtered;
 
     // is there a filter?
-    if(nameFilter || type1Filter || type2Filter || speedFilter || attackFilter) {
+    if(nameFilter || type1Filter || type2Filter || speedFilter || attackFilter || shapeFilter) {
         // yes, filter based on name
         nameFilter = nameFilter.toLowercase();
 
@@ -30,8 +35,9 @@ pokemonFilter.init(function(nameFilter, type1Filter, type2Filter, speedFilter, a
                 || pokemon.speed.toLowercase().includes(speedFilter);
             const hasAttack = !attackFilter
                 || pokemon.attack.toLowercase().includes(attackFilter);
-            
-            return hasName && hasType1 && hasType2 && hasSpeed && hasAttack;
+            const hasShape = !shapeFilter
+            || pokemon.shape.toLowercase().includes(shapeFilter);
+            return hasName && hasType1 && hasType2 && hasSpeed && hasAttack && hasShape;
         });
     }
     else {

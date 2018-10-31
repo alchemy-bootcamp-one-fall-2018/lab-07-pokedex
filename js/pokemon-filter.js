@@ -10,24 +10,29 @@ const pokemonFilter = {
     // next line is what it needs from parent
     init(onFilter) {
         nameInput.addEventListener('keyup', function() {
-            onFilter(nameInput.value, type1Input.value, type2Input.value, speedInput.value, attackInput.value);
+            onFilter(nameInput.value, type1Input.value, type2Input.value, speedInput.value, attackInput.value, shapeInput);
         });
 
         type1Input.addEventListener('keyup', function() {
-            onFilter(nameInput.value, type1Input.value, type2Input.value, speedInput.value, attackInput.value);
+            onFilter(nameInput.value, type1Input.value, type2Input.value, speedInput.value, attackInput.value, shapeInput);
         });
 
         type2Input.addEventListener('keyup', function() {
-            onFilter(nameInput.value, type1Input.value, type2Input.value, speedInput.value, attackInput.value);
+            onFilter(nameInput.value, type1Input.value, type2Input.value, speedInput.value, attackInput.value, shapeInput);
         });
 
         speedInput.addEventListener('keyup', function() {
-            onFilter(nameInput.value, type1Input.value, type2Input.value, speedInput.value, attackInput.value);
+            onFilter(nameInput.value, type1Input.value, type2Input.value, speedInput.value, attackInput.value, shapeInput);
         });
 
         attackInput.addEventListener('keyup', function() {
-            onFilter(nameInput.value, type1Input.value, type2Input.value, speedInput.value, attackInput.value);
+            onFilter(nameInput.value, type1Input.value, type2Input.value, speedInput.value, attackInput.value, shapeInput);
         });
+
+        shapeInput.addEventListener('keyup', function() {
+            onFilter(nameInput.value, type1Input.value, type2Input.value, speedInput.value, attackInput.value, shapeInput);
+        });
+
     }
 };
 
