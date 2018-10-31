@@ -5,4 +5,4 @@ const pokemons = pokemonApi.getAll();
 
 pokemonsTable.init(pokemons);
 
-//console.log('this is', pokemons);
+
