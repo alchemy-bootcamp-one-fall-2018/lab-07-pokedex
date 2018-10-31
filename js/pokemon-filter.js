@@ -12,7 +12,6 @@ const filter = {
         search.addEventListener('keyup', function() {
             const selText = document.querySelector('option[name="selectText"]:checked');
             const selNum = document.querySelector('option[name="selectNum"]:checked');
-            console.log(selText.value);
             let filtered = [];
 
             for(let j = 0; j < pokeApi.shortLength; j++) {

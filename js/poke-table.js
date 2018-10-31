@@ -4,7 +4,7 @@ const pokeTable = document.getElementById('pokeTable');
 const generateTable = {
     
     init(pokemon) {
-        var html = '<tr><th>Pokemon Name</th><th>Type_1</th><th>Type_2</th><th>Weight</th><th>Height</th><th>Attack</th></tr><tr>';
+        var html = '<tr><th>Image</th><th>Pokemon Name</th><th>Type_1</th><th>Type_2</th><th>Weight</th><th>Height</th><th>Attack</th></tr><tr>';
 
         var length = pokeApi.shortLength;
 
@@ -12,7 +12,7 @@ const generateTable = {
             length = pokemon.length;
         }
         for(let i = 0; i < length; i++){
-            // html += '<td>' + pokemon[i].pokemon + '</td>';
+            html += '<td><img src="assets/pokemon/' + pokemon[i].id + '.png"></td>';
             html += '<td>' + pokemon[i].pokemon + '</td>';
             html += '<td>' + pokemon[i].type_1 + '</td>';
             html += '<td>' + pokemon[i].type_2 + '</td>';
