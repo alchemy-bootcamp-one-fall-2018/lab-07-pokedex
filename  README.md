@@ -1,6 +1,6 @@
 # Pokedex Explorer
 
-#### Something the title
+#### Filter and Search Pokemon!
 
 #### By **@caripizza** Cari Palazzolo cari.pizza@gmail.com
 

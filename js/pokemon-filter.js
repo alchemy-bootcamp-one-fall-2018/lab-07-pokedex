@@ -1,4 +1,4 @@
-// reference static DOM so next line knows about it
+// reference static DOM elements so next lines know about them
 const nameInput = document.getElementById('filter-name');
 const type1Input = document.getElementById('filter-type1');
 const type2Input = document.getElementById('filter-type2');
