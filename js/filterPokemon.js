@@ -17,7 +17,7 @@ const pokemonFilter = {
         //event listener subscribes to events
 
         function handleFilter() {
-            onFilter(nameInput.value, typeInput.value, type2Input.value, attackInput, defenseInput);
+            onFilter(nameInput.value, typeInput.value, type2Input.value, attackInput.value, defenseInput.value);
         }
         nameInput.addEventListener('keyup', handleFilter);
         typeInput.addEventListener('keyup', handleFilter);

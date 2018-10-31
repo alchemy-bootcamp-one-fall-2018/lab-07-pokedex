@@ -46,10 +46,10 @@ pokemonFilter.init(function(nameFilter, typeFilter, type2Filter, attackFilter, d
             || pokemon.type_2.includes(type2Filter);
 
             const hasAttack = ! attackFilter
-            || pokemon.attack.includes(attackFilter);
+            || pokemon.attack >= attackFilter;
 
             const hasDefense = ! defenseFilter
-            || pokemon.defense.includes(defenseFilter);
+            || pokemon.defense >= defenseFilter;
 
             return hasName && hasType && hasType2 && hasAttack & hasDefense;
 
