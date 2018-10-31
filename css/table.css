@@ -1,0 +1,35 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .8em;
+}
+
+thead {
+    font-weight: bold;
+}
+
+td {
+    padding: 7px 0; 
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background: rgb(250, 246, 110);
+}
+
+.sort {
+    white-space: nowrap;
+    padding: 0 3px;
+}
+
+.sort.desc::after {
+    content: "▼"
+}
+
+.sort.asc::after {
+    content: "▲"
+}
+.character-pic {
+    width:20%;
+}

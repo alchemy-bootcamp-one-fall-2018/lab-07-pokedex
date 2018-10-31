@@ -598,7 +598,7 @@ export default [
         'color_f': '#A69A3F',
         'egg_group_1': 'bug',
         'egg_group_2': 'NA',
-        'url_image': 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png',
+        'url_image': '`http://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png`',
         'generation_id': 1,
         'evolves_from_species_id': '14',
         'evolution_chain_id': 5,

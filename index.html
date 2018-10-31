@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/filter.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pokémon_logo.svg/2000px-International_Pokémon_logo.svg.png">
+        <h1>POKEMON CHARACTER VAULT</h1>
+    </header>
+    
+    <main>    
+        <section id="filter" class="secondary">
+            <h2>Search</h2>
+            <label>
+                Name:
+                <input required id="filter-name">
+            </label>
+            <label>
+                Type One:
+                <input required id="filter-type-01">
+            </label>
+            <label>
+                Type Two:
+                <input required id="filter-type-02">
+            </label>
+            <label>
+                Hit Points:
+                <input required id="filter-hp-min">
+                <input required id="filter-hp-max">
+            </label>
+            <label>
+                Attack:
+                <input required id="filter-attack-min">
+                <input required id="filter-attack-max">
+            </label>
+        </section>
+
+        <section>
+            <h2>CHARACTERS:</h2>
+            <table>
+                <thead id="pokemon-header">
+                    <tr>
+                        <td><h3>POKEMON</h3></td>
+                        <td><h3>NAME</h3></td>
+                        <td><h3>TYPE ONE</h3></td>
+                        <td><h3>TYPE TWO</h3></td>
+                        <td><h3>HIT POINTS</h3></td>
+                        <td><h3>ATTACK</h3></td>
+                    </tr>
+                </thead>
+                <tbody id="pokemon-body">
+                   
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script type="module" src="js/components/app.js"></script>
+</body>
+</html> 
