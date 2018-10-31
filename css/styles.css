@@ -1,0 +1,30 @@
+header {
+
+    background: black;
+}
+
+#filter {
+
+    background: #39499B;
+    padding: 10px;
+}
+
+#list {
+
+    background: #00AA8F;
+}
+img {
+    max-width: 500px;
+    max-height: 300px;
+}
+input {
+
+    border: solid;
+    border-color: black;
+    size: 2em;
+
+ 
+}
+label {
+    color: white;
+}
