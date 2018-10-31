@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokedex Explorer</title>
+    <link rel="stylesheet" href="css/pokemon-table.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/logo.png">
+        <h1>Pokedex Explorer</h1>
+    </header>
+    <main>
+        <section id="filter">
+            <h2>Filter</h2>
+            <label>
+                    Pokemon:
+                    <input id="filter-pokemon">
+                </label>
+            <label>
+                Type 1:
+                <input id="filter-type1">
+            </label>
+            <label>
+                Type 2:
+                <input id="filter-type2">
+            </label>
+            <label>
+                Base experience (greater than/equal to):
+                <input id="filter-base">
+            </label>
+            <label>
+                    Hidden ability:
+                    <input id="filter-ability_hidden">
+                </label>
+         </section>
+        
+        <section>
+            <table>
+                <thead id="pokedex-header">
+                    <tr>
+                        <td>Image</td>
+                        <td class="sort asc">Pokemon</td>
+                        <td>Type 1</td>
+                        <td>Type 2</td>
+                        <td>Base Experience</td>
+                        <td>Hidden Ability</td>
+                    </tr>
+                </thead>
+                <tbody id="pokedex-body">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script type="module" src="./js/app.js"></script>
+
+</body>
+</html>
