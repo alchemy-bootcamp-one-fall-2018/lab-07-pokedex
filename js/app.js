@@ -10,7 +10,7 @@ const pokemon = pokemonApi.getAll();
 pokemonTable.init(pokemon);
 
 // events up! (via callback)
-pokemonFilter.init(function(type1Filter, type2Filter, attackFilter, ability1Filter,eggGroup1Filter) {
+pokemonFilter.init(function(type1Filter, type2Filter, attackFilter, ability1Filter, eggGroup1Filter) {
     
     let filtered;
 
