@@ -6,32 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pokemon Lab</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/pokemon-table.css">
+    <link href="https://fonts.googleapis.com/css?family=Ranchers|Slackey" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 </head>
     <body>
-        <header>
-                <img class="???" src="???">
-                <h1>Pokemon Lab</h1>
-        </header>
+        <header></header>
     
         <main>    
-            <section id="filter" class="secondary">
-                <h2>Seek Pokemon:</h2>
-                <label>
-                    Name:
-                    <input id="filter-name">
-                </label>
-                <label>
-                    Type 1:
-                    <input id="filter-type1">
-                </label>
-                <label>
-                    Type 2:
-                    <input id="filter-type2">
-                </label>
+            <section>
+                <div >
+                    <h2 class="heading-two">Seek Pokemon:</h2>
+                </div>
+
+                <div id="filter-headings">
+                    <label>
+                        Name:
+                        <input id="filter-name">
+                    </label>
+                    <label>
+                        Type 1:
+                        <input id="filter-type1">
+                    </label>
+                    <label>
+                        Type 2:
+                        <input id="filter-type2">
+                    </label>
+                        Attack:
+                        <input id="filter-attack">
+                    </label>
+                        Defence:
+                        <input id="filter-speed">
+                    </label>
+                        Speed:
+                        <input id="filter-speed">
+                    </label>
+                </div>  
             </section>
 
             <section>
-                <h2>Pokemon</h2>
+                <h2 class="heading-two">Pokemon</h2>
                 <table>
                     <thead id="pokemon-header">
                         <tr>

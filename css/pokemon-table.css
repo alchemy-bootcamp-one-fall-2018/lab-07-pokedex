@@ -1,0 +1,41 @@
+img {
+    width: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background: rgb(243, 225, 153);
+}
+
+#pokemon-header {
+    background: #C36F35;
+    font-family: 'Ranchers', cursive;
+    font-family: 'Slackey', cursive;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+th {
+    height: 80px;
+}
+
+#pokemon-tbody {
+    font-family: 'IBM Plex Mono', monospace;
+    margin-left: 100px;
+}
+
+/* @media screen and (max-width: 800px) {
+    form {
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    label {
+        justify-content: space-between;
+        max-width: 200px;
+    }
+} */
