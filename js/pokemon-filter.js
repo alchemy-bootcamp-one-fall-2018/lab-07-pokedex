@@ -2,7 +2,7 @@
 
 const pokemonFilter = {
     init() {
-        console.log('pokemonFilter is connected');
+
     }
 };
 

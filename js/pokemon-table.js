@@ -4,12 +4,13 @@ const pokemonTbody = document.getElementById('pokemon-tbody');
 
 function makeRow(pokemon) {
     return html`<tr>
-        <td>${pokemon.url_image}</td>
+        <td><img src="${pokemon.url_image}" /></td>
         <td>${pokemon.pokemon}</td>
         <td>${pokemon.type_1}</td>
         <td>${pokemon.type_2}</td>
         <td>${pokemon.attack}</td>
         <td>${pokemon.defense}</td>
+        <td>${pokemon.speed}</td>
     </tr>`;
 }
 
