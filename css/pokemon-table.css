@@ -3,25 +3,29 @@ table {
     border-collapse: collapse;
     font-family: 'Courier New', Courier, monospace;
 }
+
 thead{
     font-size: 14px;
     background: black;
     color: white;
+    text-align: center;
+
 }
+
 td {
-    padding: 7px 0;
+    padding: 7px 10px 7px 10px;
     white-space: nowrap;
+    text-align: center;
 }
 
 #table-body {
     text-transform: uppercase;
 }
 
-text-transform: uppercase;
 tr:nth-child(even){
-    background: #7e7e7e;
-    color: white;
+    background: #aaaaaa;
 }
+
 img {
     width: 40px;
     height: 40px;

@@ -2,16 +2,21 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-main {
-    margin: 10px;
-}
-
 header {
     display: flex;
     justify-content: flex-start;
     background: black;
     color: white;
     padding: 0px 10px 0px 10px;
+}
+
+main {
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+label {
+    padding: 10px;
 }
 
 section {
@@ -21,6 +26,16 @@ section {
     font-size: 10px;
     flex-direction: row;
     margin: 20px;
+}
+
+@media (max-width:600px){
+    section {
+        flex-direction: column;
+    }
+    #numbers {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 
