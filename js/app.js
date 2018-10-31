@@ -7,7 +7,7 @@ const pokemons = pokemonApi.getAll();
 
 pokemonsTable.init(pokemons);    //data down
 
-pokemonCount.init(pokemons.length);
+pokemonCount.init(pokemons.length, '');
 
 //data down
 pokemonsFilter.init(function(pokemonFilter, typeFilter) {
@@ -30,5 +30,5 @@ pokemonsFilter.init(function(pokemonFilter, typeFilter) {
     }    
             
     pokemonsTable.update(filtered);
-    pokemonCount.update(filtered.length);
+    pokemonCount.update(filtered.length, pokemonFilter);
 });
