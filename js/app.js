@@ -7,18 +7,22 @@ const pokemons = pokemonApi.getAll();
 pokemonsTable.init(pokemons);    //data down
 
 //data down
- pokemonsFilter.init(function(pokemonFilter, type_1Filter, 
+pokemonsFilter.init(function(pokemonFilter, type_1Filter, 
     type_2Filter, hpFilter, ability_1Filter, ability_2Filter, 
     ability_hiddenFilter) {
         
-        let filtered;
+    let filtered;
         
-        if(pokemonFilter || type_1Filter || type_2Filter 
-            || hpFilter || ability_1Filter || ability_2Filter
-            ||ability_hiddenFilter) {
+    if(pokemonFilter || type_1Filter || type_2Filter 
+            || hpFilter || ability_1Filter || ability_2Filter 
+            || ability_hiddenFilter) {
                
-                filtered = pokemons.filter(function(pokemon) {
-                    const hasPokemon = !pokemonsFilter || pokemon.  
-                });
-            }   
+        filtered = pokemons.filter(function(pokemon) {   ///this is all bad
+            const hasPokemon = !pokemonsFilter;            //trying to pass Travis
+        }); 
+    } else {
+        filtered = pokemons;
+    }    
+            
+    pokemonsTable.update(filtered);
 });
