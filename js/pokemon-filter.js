@@ -14,13 +14,13 @@ const filter = {
             const selNum = document.querySelector('option[name="selectNum"]:checked');
             let filtered = [];
 
-            for(let j = 0; j < pokeApi.shortLength; j++) {
-                if(pokemon[j][selText.value].includes(textBox.value) && pokemon[j][selNum.value] >= numBox.value) {
-                    filtered.push(pokemon[j]);
+            pokemon.forEach(function(item) {
+                if(item[selText.value].includes(textBox.value) && item[selNum.value] >= numBox.value) {
+                    filtered.push(item);
                 }
-            }
 
-            // if(se)
+            });
+
             generateTable.init(filtered);
         });
     }
