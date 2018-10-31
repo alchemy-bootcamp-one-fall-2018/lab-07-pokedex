@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokedex Explorer!</title>
+    <link rel="stylesheet" href="./css/pokemon-table.css">
+    <link rel="stylesheet" href="./css/pokemon-filter.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/pokemon/89.png" alt="logo" class="logo">
+        <h1>Pokedex Explorer!</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Search:</h2>
+        </div>
+        <section id="filter">
+                <label>
+                    Name<br>
+                    <input id="filter-name">
+                </label>
+                <label>
+                    Type 1<br>
+                    <input id="filter-type1">
+                </label>
+                <label>
+                    Type 2<br>
+                    <input id="filter-type2">
+                </label>
+                <label>
+                    Speed<br>
+                    <input id="filter-speed" type="number" pattern="[-+]?[0-9]">
+                </label>
+                <label>
+                    Attack<br>
+                    <input id="filter-attack" type="number" pattern="[-+]?[0-9]">
+                </label>
+                <label>
+                    Shape<br>
+                    <input required id="filter-shape">
+                </label>
+            <!-- <p id="button-div">
+                <button>Go!</button>
+            </p> -->
+        </section>
+        <!-- <hr> -->
+        <div>
+            <h2>Results:</h2>
+        </div>
+        <section id="results" style="overflow-y:scroll">
+            <table id="results-table">
+                <thead id="pokemon-header">
+                    <tr id="column-headings">
+                        <td>Name</td>
+                        <td>Type 1</td>
+                        <td>Type 2</td>
+                        <td>Speed</td>
+                        <td>Attack</td>
+                        <td>Shape</td>
+                        <td>Image</td>
+                    </tr>
+                </thead>
+                <tbody id="pokemon-table-body">
+                </tbody>
+            </table>
+        </section>
+            <footer>
+                <h2><a href="#top">Back to Top</a></h2>
+            </footer>
+    </main>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
