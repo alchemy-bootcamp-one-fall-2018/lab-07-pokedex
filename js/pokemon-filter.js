@@ -3,20 +3,25 @@ import generateTable from './poke-table.js';
 
 const pokemon = pokeApi.getAll();
 const textBox = document.getElementById('textBox');
+const numBox = document.getElementById('numBox');
+const search = document.getElementById('search');
 
 const filter = {
     
     init() {
-        textBox.addEventListener('keyup', function() {
-            const sel = document.querySelector('option:checked').value;
-
-            console.log(sel);
+        search.addEventListener('keyup', function() {
+            const selText = document.querySelector('option[name="selectText"]:checked');
+            const selNum = document.querySelector('option[name="selectNum"]:checked');
+            console.log(selText.value);
             let filtered = [];
+
             for(let j = 0; j < pokeApi.shortLength; j++) {
-                if(pokemon[j][sel].includes(textBox.value)) {
+                if(pokemon[j][selText.value].includes(textBox.value) && pokemon[j][selNum.value] >= numBox.value) {
                     filtered.push(pokemon[j]);
                 }
             }
+
+            // if(se)
             generateTable.init(filtered);
         });
     }

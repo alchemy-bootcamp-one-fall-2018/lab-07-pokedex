@@ -13,23 +13,27 @@
     </header>
 
     <section>
+        <section id="search">
+            <select>
+                <option name="selectText" value="pokemon">Pokemon Name</option>
+                <option name="selectText" value="type_1">Type_1</option>
+                <option name="selectText" value="type_2">Type_2</option>
+            </select>
+            <input type="text" id="textBox" placeholder="text">
+            
+            <select>
+                <option name="selectNum" value="weight">Weight</option>
+                <option name="selectNum" value="height">Height</option>
+                <option name="selectNum" value="attack">Attack</option>
+            </select>
+            <input type="number" id="numBox" placeholder="minimum value">
+        </section>
         <h2>Pokemons:</h2>
         <table id="pokeTable">
             
         </table>
     </section>
 
-    <section id="search">
-        <select>
-            <option name="select" value="pokemon">Pokemon Name</option>
-            <option name="select" value="weight">Weight</option>
-            <option name="select" value="height">Height</option>
-            <option name="select" value="type_1">Type_1</option>
-            <option name="select" value="type_2">Type_2</option>
-            <option name="select" value="attack">Attack</option>
-        </select>
-        <input type="text" id="textBox">
-    </section>
     
     <script type="module" src="js/app.js"></script>
 </body>
