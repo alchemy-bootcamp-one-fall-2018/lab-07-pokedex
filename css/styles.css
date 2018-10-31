@@ -1,0 +1,14 @@
+h2 {
+    text-align: center;
+    padding: 25px 0px 35px 0px;
+}
+
+header h1 {
+    text-align: center;
+    padding: 25px 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
