@@ -18,10 +18,20 @@ pokemonFilter.init(function(pokemonFilter, defenseFilter, attackFilter, type1Fil
         type1Filter = type1Filter.toLowerCase();
         type2Filter = type2Filter.toLowerCase();
 
-            filtered = pokemons.filter(function(pokemon) {
-                const hasPokemon = !pokemonFilter
-                    || pokemon.pokemon.toLowerCase().includes(pokemonFilter);
-                const     
-            });
-        }
+        filtered = pokemons.filter(function(pokemon) {
+            const hasPokemon = !pokemonFilter
+                || pokemon.pokemon.toLowerCase().includes(pokemonFilter);
+            const hasDefense = !defenseFilter || pokemon.defense.includes(defenseFilter);
+            const hasAttack = !attackFilter || pokemon.attack.includes(attackFilter);
+            const hasType1 = !type1Filter || pokemon.type1.includes(type1Filter);
+            const hasType2 = !type2Filter || pokemon.type2.includes(type2Filter);
+
+            return hasPokemon && hasDefense && hasAttack && hasType1 && hasType2;
+        });
+    }
+    else {
+        filtered = pokemons;
+    }
+    pokemonTable.update(filtered);
+    console.log(filtered);
 });

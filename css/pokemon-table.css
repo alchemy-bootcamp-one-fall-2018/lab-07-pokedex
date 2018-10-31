@@ -20,3 +20,11 @@ tr:nth-child(even) {
     width: 5vw;
     border: 2px dotted 
 }
+h2 {
+    background-color: aquamarine;
+    border-radius: 10px;
+    text-align: center;
+}
+tr {
+    border: 2px solid bisque;
+}
