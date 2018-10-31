@@ -10,22 +10,27 @@ const pokemon = pokemonApi.getAll();
 pokemonTable.init(pokemon);
 
 // events up! (via callback)
-pokemonFilter.init(function(type1Filter, type2Filter) {
+pokemonFilter.init(function(type1Filter, type2Filter, attackFilter) {
     
     let filtered;
 
   // do we have a filter?
-    if(type1Filter || type2Filter) {
-      // yes!, filter based on type1 or type2
+    if(type1Filter || type2Filter || attackFilter) {
+      // yes!, filter based on type1 or type2 or attack
         type1Filter = type1Filter.toLowerCase();
+        type2Filter = type2Filter.toLowerCase();
   
         filtered = pokemon.filter(function(pokemon) {
             const hasType1 = !type1Filter
               || pokemon.type_1.toLowerCase().includes(type1Filter); 
 
-            const hasType2 = !type2Filter || pokemon.type_2.includes(type2Filter);
+            const hasType2 = !type2Filter 
+              || pokemon.type_2.toLowerCase().includes(type2Filter);
 
-            return hasType1 && hasType2;
+            const hasAttack = !attackFilter 
+              || pokemon.attack <= attackFilter;
+
+            return hasType1 && hasType2 && hasAttack;
         });
     }
     else {
