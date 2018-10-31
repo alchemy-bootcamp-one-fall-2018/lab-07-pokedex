@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box; 
+}
+body {
+    background-image:url(https://images3.alphacoders.com/273/273289.jpg);
+    background-size: auto; 
+}
+
+header {
+    font-size: 40pt; 
+    text-emphasis: bold;
+    text-align: center;
+    font-family: 'Quando', serif;
+    display: flex;
+    justify-content: flex-start; 
+
+}
+.secondary {background-color: rgb(252, 252, 67); 
+    font-family: 'Quando', serif;
+    font-size:20pt; 
+    font-family: 'Judson', serif; 
+    border: 5pt black;
+}

@@ -6,7 +6,7 @@ function makeRow(pokemon) {
         <td>${pokemon.pokebase}</td> 
         <td>${pokemon.species_id}</td>
         <td>${pokemon.type_1}</td>
-        <td>${pokemon.type_2}</td>
+        <td>${pokemon.ability_1}</td>
         <td>${pokemon.defense}</td>
         <td>${pokemon.attack}</td>
     </tr>`;
