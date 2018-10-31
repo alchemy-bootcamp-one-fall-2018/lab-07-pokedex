@@ -4,6 +4,7 @@ const tableBody = document.getElementById('pokemon-body');
 
 function makeRow(pokemonParam) {
     return html`<tr>
+    <td><img src="${pokemonParam.url_image}"/></td>
     <td>${pokemonParam.pokemon}</td>
     <td>${pokemonParam.type_1}</td>
     <td>${pokemonParam.type_2}</td>
@@ -19,7 +20,17 @@ const pokemonTable = {
             let row = makeRow(pokemonParam[i]);
             tableBody.appendChild(row);
         }
+    },
+
+    update(pokemonParam) {
+        while(tableBody.lastElementChild) {
+            tableBody.lastElementChild.remove();
+        }
+        pokemonTable.init(pokemonParam);
+        
     }
 };
+
+
 
 export default pokemonTable;
