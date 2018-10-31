@@ -2,9 +2,29 @@ import html from './html.js';
 
 const tableBody = document.getElementById('pokemon-body');
 
-function makeRow(pokemon) {
-    return html'<tr>
-        <td>${pokemon.pokemon}</td?
-    </tr>
+function makeRow(pokemons) {
+    return html`<tr>
+        <td>${pokemons.pokemon}</td>  
+        <td>${pokemons.type_1}</td>  
+        <td>${pokemons.type_2}</td>  
+        <td>${pokemons.speed}</td>  
+        <td>${pokemons.hp}</td>  
+    </tr>`;
+}
 
-})
+const pokeTable = {
+    init(pokemon) {
+        for(let i = 0; i < pokemon.length; i++) {
+            const row = makeRow(pokemon[i]);
+            tableBody.appendChild(row); // adds row to tableBody
+        }
+    }, 
+    update(pokemon) {
+        while(tableBody.lastElementChild) {
+            tableBody.lastElementChild.remove();
+        }
+        pokeTable.init(pokemon); // initialize pokeTable with value of pokemon array
+    }
+};
+
+export default pokeTable;
