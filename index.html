@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pokemon-table.css">
+</head>
+<body>
+    <header>
+        <img class="pokemon" src="assets/pokemonball.png">
+        <h1>Pokedex</h1>
+    </header>
+    
+    <main>    
+        <section id="filter" class="secondary">
+            <h2 id="search">Search for Pokemon</h2>
+            <label>
+                Name:
+                <input required id="filter-name">
+            </label>
+            <label>
+                Type 1:
+                <input required id="filter-type-1">
+            </label>
+            <label>
+                Type 2:
+                <input required id="filter-type-2">
+            </label>
+            <label>
+                Attack minimum:
+                <input required id="filter-attack-min">
+            </label>
+            <label>
+                HP minimum:
+                <input required id="filter-hp">
+            </label>
+        </section>
+
+        <section>
+            <h2>Pokemon</h2>
+            <table align="center">
+                <thead id="pokemon-header">
+                    <tr>
+                        <td ></td>
+                        <td class="sort" data-property="pokemon">Name</td>
+                        <td class="sort" data-property="type_1">Type 1</td>
+                        <td class="sort" data-property="type_2">Type 2</td>
+                        <td class="sort" data-property="attack">Attack</td>
+                        <td class="sort" data-property="defense">Defense</td>
+                        <td class="sort" data-property="hp">HP</td>
+                    </tr>
+                </thead>
+                <tbody id="pokemon-body"></tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script type="module" src="js/components/app.js"></script>
+</body>
+</html>

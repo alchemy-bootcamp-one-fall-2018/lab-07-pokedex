@@ -1,0 +1,15 @@
+table {
+    
+}
+thead {
+    font-size: 40px;
+}
+tbody {
+    font-family: arvo ;
+    font-size: 25px
+    cell-align
+} 
+h2 {
+    text-align: center;
+}
+tr:hover {background-color: red;}
