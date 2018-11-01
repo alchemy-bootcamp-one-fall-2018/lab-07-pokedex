@@ -1,0 +1,29 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .8em;
+  background-color: burlywood;
+  text-align: center;
+  width: 100%;
+  
+  
+
+}
+
+thead {
+  font-weight: bold;
+  background-color: red;
+}
+
+td {
+  padding: 7px 0; 
+  white-space: nowrap;
+  border: 3px solid teal;
+
+}
+
+#selections {
+  height:400px;
+  overflow: auto;
+}
+
