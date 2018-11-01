@@ -1,0 +1,35 @@
+img {
+    width: 50px;
+}
+
+#pokemon-header {
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;  
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .8em;
+}
+
+thead {
+    font-weight: bold;
+}
+
+td {
+    padding: 7px 0; 
+    white-space: nowrap;
+}
+
+tr:nth-child(even) {
+    background: rgb(248, 179, 76);
+}
+
+table,tr {
+    border: 5px solid black;
+}
+
+th {
+    height: 100px;
+}
