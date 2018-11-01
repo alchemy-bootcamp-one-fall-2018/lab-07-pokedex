@@ -23,4 +23,3 @@ export default function html(strings, ...values) {
 
     return dom;
 }
-
