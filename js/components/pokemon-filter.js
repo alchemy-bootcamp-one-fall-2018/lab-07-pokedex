@@ -5,7 +5,7 @@ const type2Input = document.getElementById('type2-filter');
 const speedInput = document.getElementById('speed-filter');
 
 const pokemonsFilter = {
-    init(onFilter)  {
+    init(onFilter) {
 
         pokemonInput.addEventListener('keyup', function() {
             onFilter(pokemonInput.value, attackInput.value, type1Input.value, type2Input.value, speedInput.value);

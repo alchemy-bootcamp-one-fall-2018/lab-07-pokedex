@@ -16,10 +16,16 @@ pokemonsFilter.init(function(pokemonFilter, attackFilter, type1Filter, type2Filt
         filtered = pokemons.filter(function(pokemon) {
             const hasPokemon = !pokemonFilter
                 || pokemon.pokemon.toLowerCase().includes(pokemonFilter);
-
+                
             const hasAttack = !attackFilter || pokemon.attack >= attackFilter;
 
-            return hasPokemon && hasAttack;
+            const hasType1 = !type1Filter || pokemon.type_1.toLowerCase().includes(type1Filter);
+
+            const hasType2 = !type2Filter || pokemon.type_2.toLowerCase().includes(type2Filter);
+
+            const hasSpeed = !speedFilter || pokemon.speed >= speedFilter;
+
+            return hasPokemon && hasAttack && hasType1 && hasType2 && hasSpeed;
 
         });
 

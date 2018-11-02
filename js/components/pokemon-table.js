@@ -17,7 +17,6 @@ const pokemonsTable = {
         for(let i = 0; i < pokemons.length; i++) {
             const tr = makeRow(pokemons[i]);
             tableBody.appendChild(tr);
-            console.log(pokemons[i]);
         }
     },
     update(pokemons) {
