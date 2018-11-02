@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pokedex</title>
     <link rel="stylesheet" href="css/styles.css">
-    <!-- <link rel="stylesheet" href="css/pokemon-filter.css"> -->
+    <link rel="stylesheet" href="css/pokemon-filter.css">
     <link rel="stylesheet" href="css/pokemon-table.css">
 </head>
 
@@ -19,11 +19,9 @@
                 <label>Name:
                     <input id="filter-name">
                 </label>
-                <label>Type 1:
-                    <input id="filter-type-1">
-                </label>
-                <label>Type 2:
-                    <input id="filter-type-2">
+                <!-- make only one label for Type -->
+                <label>Type:
+                    <input id="filter-type">
                 </label>
                 <label>Ability 1:
                     <input id="filter-ability-1">
@@ -35,14 +33,14 @@
                 
 
         
-        <section>
+        <section style="text-align: center;">
             <h3>Pokemon Table</h3>
                 <table>
                     <thead>
                         <tr>
                             <td>Name</td>
-                            <td>Type 1</td>
-                            <td>Type 2</td>
+                            <!-- remove one Type -->
+                            <td>Type</td>
                             <td>Ability</td>
                             <td>Shape</td>
                         </tr>
