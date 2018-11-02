@@ -11,17 +11,19 @@
 </head>
 <body>
     <header>
-        <img src="assets/pokemon/89.png" alt="logo" class="logo">
         <h1>Pokedex Explorer!</h1>
     </header>
     <main>
         <div>
-            <h2>Search:</h2>
+            <p id="label-style">Pokémon search & filter</p>
+            <hr class="purple">
+            <!-- <h2>Search:</h2> -->
         </div>
+        <hr>
         <section id="filter">
                 <label>
                     Name<br>
-                    <input id="filter-name">
+                    <input class="clearable" id="filter-name">
                 </label>
                 <label>
                     Type 1<br>
@@ -32,32 +34,28 @@
                     <input id="filter-type2">
                 </label>
                 <label>
-                    Speed<br>
+                    Speed (>#)<br>
                     <input id="filter-speed" type="number" pattern="[-+]?[0-9]">
                 </label>
                 <label>
-                    Attack<br>
+                    Attack (>#)<br>
                     <input id="filter-attack" type="number" pattern="[-+]?[0-9]">
                 </label>
                 <label>
                     Shape<br>
                     <input required id="filter-shape">
                 </label>
-            <!-- <p id="button-div">
-                <button>Go!</button>
-            </p> -->
-        </section>
-        <!-- <hr> -->
+            </section>
         <div>
             <h2>Results:</h2>
-            <hr>
+            <hr id="results-hr">
             <h3 id="no-results"></h3>
         </div>
-        <section id="results" style="overflow-y:scroll">
+        <section class="results" style="overflow-y:scroll">
             <table id="results-table">
                 <thead id="pokemon-header">
                     <tr id="column-headings">
-                        <td class="headers">Name</td>
+                        <td class="headers" id="name-link">Name</td>
                         <td class="headers">Type 1</td>
                         <td class="headers">Type 2</td>
                         <td class="headers">Speed</td>
@@ -70,10 +68,11 @@
                 </tbody>
             </table>
         </section>
-            <footer>
-                <h2><a href="#top">Back to Top</a></h2>
-            </footer>
     </main>
+    <footer>
+        <span>~ Scroll to view ~</span>
+        <span><a href="./#name-link">Back to top</a></span>
+    </footer>
     <script type="module" src="js/app.js"></script>
 </body>
 </html>
