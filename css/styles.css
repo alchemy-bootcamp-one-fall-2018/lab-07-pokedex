@@ -6,7 +6,7 @@
 /* ----------- Body > Header styles ----------- */
 body {
     /* display: block; */
-    background-image: url("/assets/pokemon/89.png");
+    background-image: url("../assets/pokemon/89.png");
     background-color: purple;
     align-content: center;
 }
