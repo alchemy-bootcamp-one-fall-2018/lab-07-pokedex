@@ -28,29 +28,24 @@ h2 {
     color: purple;
     text-align: center;
 }
-h2 a {
-    color: yellowgreen;
-}
-
-hr {
-    border: 10px solid yellowgreen;
-}
-
-hr#results-hr {
-    border-bottom: 8px solid red;
-}
 
 div {
     background-color: yellowgreen;
 }
 
-a:hover {
-    color: yellow;
-}
 h3 {
     color: purple;
     text-align: center;
     font-style: italic;
+}
+
+span a {
+    color: yellow;
+    font-weight: 100;
+}
+
+span a:hover {
+    color: red;
 }
 
 footer {

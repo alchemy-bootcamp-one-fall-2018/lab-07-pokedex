@@ -6,11 +6,15 @@ import pokemonFilter from './pokemon-filter.js';
 // get initial data
 const pokemon = pokemonApi.getAll();
 
+// first display total pokemon count
+var pokemonCount = pokemon.length;
+var countDisplay = document.getElementById('total-count');
+if(pokemonCount === 801) {
+    countDisplay.textContent = pokemonCount;
+}
+
 // send data downward
 pokemonTable.init(pokemon);
-
-var noResultsResponse = document.getElementById(['no-results']);
-var headers = document.getElementById('column-headings');
 
 // now send the events up
 pokemonFilter.init(function(nameFilter, type1Filter, type2Filter, shapeFilter, speedFilter, attackFilter) {
@@ -22,7 +26,7 @@ pokemonFilter.init(function(nameFilter, type1Filter, type2Filter, shapeFilter, s
         nameFilter = nameFilter.toLowerCase();
         type1Filter = type1Filter.toLowerCase();
         type2Filter = type2Filter.toLowerCase();
-        shapeFilter = shapeFilter.value;
+        shapeFilter = shapeFilter.value.toLowerCase();
         speedFilter = speedFilter.value;
         attackFilter = attackFilter.value;
 
@@ -35,7 +39,7 @@ pokemonFilter.init(function(nameFilter, type1Filter, type2Filter, shapeFilter, s
             const hasType2 = !type2Filter
                 || pokemon.type_2.toLowerCase().includes(type2Filter);
             const hasShape = !shapeFilter
-                || pokemon.shape.includes(shapeFilter);
+                || pokemon.shape.toLowerCase().includes(shapeFilter);
             const hasSpeed = !speedFilter
                 || pokemon.speed >= speedFilter;
             const hasAttack = !attackFilter
@@ -44,18 +48,25 @@ pokemonFilter.init(function(nameFilter, type1Filter, type2Filter, shapeFilter, s
             return hasName && hasType1 && hasType2 && hasShape && hasSpeed && hasAttack;
         });
     }
-    // if(filtered.length <= 0) {
-    //     noResultsResponse.innerHTML = 'No matching results';
-    //     headers.classList.add('hidden');
-    //     else  {
-    //         noResultsResponse.classList.add('hidden');
-    //         headers.classList.remove('hidden');
-    //     }
-    // }
     else {
-        // if no then use the full list
+        // if no then display the full unfiltered list
         filtered = pokemon;
     }
+
+    // if filtered, display total filtered count instead of total pokemon count
+    var filteredCount = filtered.length;
+    if(filteredCount !== 801) {
+        countDisplay.textContent = filtered.length;
+    }
+    else {
+        countDisplay.textContent = pokemonCount;
+    }
+    // if 0 result after filter, hide column headings
+    var columnHeadings = document.getElementById('column-headings');
+    if(filteredCount === 0) {
+        columnHeadings.classList.add('hidden');
+    }
+    else columnHeadings.classList.remove('hidden');
 
         // hey table, update!
     pokemonTable.update(filtered);

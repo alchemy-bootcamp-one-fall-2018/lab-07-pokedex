@@ -32,8 +32,6 @@ const pokemonFilter = {
         attackInput.addEventListener('keyup', function() {
             onFilter(nameInput.value, type1Input.value, type2Input.value, shapeInput, speedInput, attackInput);
         });
-
-
     }
 };
 

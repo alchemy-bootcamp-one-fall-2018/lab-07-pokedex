@@ -1,7 +1,8 @@
 
 section#filter {
     background-color: yellowgreen;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
+    outline: 2px solid yellowgreen;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -10,6 +11,10 @@ section#filter {
 
 hr.purple {
     border: 1px dashed purple;
+}
+
+hr.green {
+    border: 5px solid yellowgreen;
 }
 
 input {

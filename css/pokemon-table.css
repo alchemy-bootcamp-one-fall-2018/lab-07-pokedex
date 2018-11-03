@@ -1,12 +1,13 @@
 
-.results {
+section.results {
     display: flex;
-    /* order: 2; */
-    /* flex-direction: column; */
-    /* flex-flow: row wrap; */
-    width: 100%;
     overflow: auto;
-    height: 50vh;
+    height: 52vh;
+}
+
+hr#results-hr {
+    border-bottom: 8px solid red;
+    border-top: 5px solid yellowgreen;
 }
 
 table {
@@ -35,7 +36,7 @@ img {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 12px;
 }
 
 /* Track */
