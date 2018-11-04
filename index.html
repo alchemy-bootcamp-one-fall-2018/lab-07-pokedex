@@ -14,38 +14,45 @@
         <header></header>
     
         <main>    
-            <section>
-                <div >
+            <fieldset>
+                <legend>
                     <h2 class="heading-two">Seek Pokemon:</h2>
-                </div>
-
-                <div id="filter-headings">
+                </legend>
+                <form id="filter-headings">
                     <label>
                         Name:
-                        <input id="filter-name">
+                        <input type="text" id="filter-name">
                     </label>
+
                     <label>
                         Type 1:
-                        <input id="filter-type1">
+                        <input type="text" id="filter-type1">
                     </label>
+
                     <label>
                         Type 2:
-                        <input id="filter-type2">
+                        <input type="text" id="filter-type2">
                     </label>
+
+                    <label>
                         Attack:
-                        <input id="filter-attack">
+                        <input type="text" id="filter-attack">
                     </label>
+
+                    <label>
                         Defence:
-                        <input id="filter-speed">
+                        <input type="text" id="filter-defense">
                     </label>
+
+                    <label>
                         Speed:
-                        <input id="filter-speed">
+                        <input type="text" id="filter-speed">
                     </label>
-                </div>  
-            </section>
+                </form>  
+            </fieldset>
 
             <section>
-                <h2 class="heading-two">Pokemon</h2>
+                <h2 class="heading-two">Pokemon:</h2>
                 <table>
                     <thead id="pokemon-header">
                         <tr>

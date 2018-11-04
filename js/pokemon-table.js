@@ -16,12 +16,18 @@ function makeRow(pokemon) {
 
 
 const pokemonTable = {
-    init(pokemonData) {
-        for(var i = 0; i < pokemonData.length; i++) {
-            let tableRow = makeRow(pokemonData[i]);
+    init(pokemon) {
+        for(var i = 0; i < pokemon.length; i++) {
+            let tableRow = makeRow(pokemon[i]);
             pokemonTbody.appendChild(tableRow);
         }
     },
+    update(pokemon) {
+        while(pokemonTbody.lastElementChild) {
+            pokemonTbody.lastElementChild.remove();
+        }
+        pokemonTable.init(pokemon);
+    }
 };
 
 export default pokemonTable;

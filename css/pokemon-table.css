@@ -16,26 +16,14 @@ tr:nth-child(even) {
     font-family: 'Ranchers', cursive;
     font-family: 'Slackey', cursive;
     font-size: 25px;
-    margin-left: 10px;
+    margin-left: 50px;
 }
 
 th {
     height: 80px;
+    text-align: left;
 }
 
 #pokemon-tbody {
     font-family: 'IBM Plex Mono', monospace;
-    margin-left: 100px;
 }
-
-/* @media screen and (max-width: 800px) {
-    form {
-        flex-direction: column;
-        align-items: initial;
-    }
-
-    label {
-        justify-content: space-between;
-        max-width: 200px;
-    }
-} */
