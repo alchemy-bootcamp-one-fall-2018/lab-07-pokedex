@@ -1,0 +1,10 @@
+table {
+    border-collapse: separate;
+    border-spacing: 20px;
+    margin:20px;
+    text-align: left;
+}
+thead {
+font-weight: bold;
+border: 1px solid;
+}

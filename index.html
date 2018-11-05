@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pokemon-filter.css">
+    <link rel="stylesheet" href="css/pokemon-table.css">
+</head>
+<body>
+    <header>
+       <h1>POKEDEX</h1> 
+       <img src="https://upload.wikimedia.org/wikipedia/ro/thumb/8/89/Pikachu.jpg/200px-Pikachu.jpg">
+    </header>
+
+    <main>
+        <section id="filter">
+            <h2>Search</h2>
+            <label>
+                Pokemon:
+                <input required id="pokemon-filter" name="pokemon">
+            </label>
+
+            <label>
+                Attack:
+                <input required id="attack-filter" name="attack">
+            </label>
+
+            <label>
+                Type1:
+                <input required id="type1-filter" name="type_1">
+            </label>
+
+            <label>
+                Type2:
+                <input required id="type2-filter" name="type_2">
+            </label>
+
+            <label>
+                Speed:
+                <input required id="speed-filter" name="speed">
+            </label>
+            
+
+        </section>
+
+        <section>
+            <h2>Pokemon Table</h2>
+            <table>
+                <thead id="pokemon-header">
+                    <tr>
+                        <td class="headline">Pokemon</td>
+                        <td>Attack</td>
+                        <td>Type 1</td>
+                        <td>Type 2</td>
+                        <td>Speed</td>
+                    </tr>
+                </thead>
+                <tbody id="pokemon-body">                   
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script type="module" src="js/components/app.js"></script>
+    <script type="module" src="js/components/pokemon-api.js"></script>
+    <script type="module" src="js/components/pokemon-filter.js"></script>
+    <script type="module" src="js/components/pokemon-table.js"></script>
+    <script type="module" src="js/html.js"></script> 
+
+</body>
+</html>
