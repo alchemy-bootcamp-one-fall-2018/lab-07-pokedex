@@ -8,70 +8,71 @@
     <link rel="stylesheet" href="./css/pokemon-table.css">
     <link rel="stylesheet" href="./css/pokemon-filter.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
     <header>
-        <img src="assets/pokemon/89.png" alt="logo" class="logo">
         <h1>Pokedex Explorer!</h1>
     </header>
     <main>
         <div>
-            <h2>Search:</h2>
+            <p id="label-style">Pokémon search & filter</p>
+            <hr class="purple">
         </div>
+        <hr class="green">
         <section id="filter">
                 <label>
                     Name<br>
-                    <input id="filter-name">
+                    <input id="filter-name" type="text">
                 </label>
                 <label>
                     Type 1<br>
-                    <input id="filter-type1">
+                    <input id="filter-type1" type="text">
                 </label>
                 <label>
                     Type 2<br>
-                    <input id="filter-type2">
+                    <input id="filter-type2" type="text">
                 </label>
                 <label>
-                    Speed<br>
-                    <input id="filter-speed" type="number" pattern="[-+]?[0-9]">
+                    Speed (>#)<br>
+                    <input id="filter-speed" type="number" pattern="[+]?[0-9]">
                 </label>
                 <label>
-                    Attack<br>
-                    <input id="filter-attack" type="number" pattern="[-+]?[0-9]">
+                    Attack (>#)<br>
+                    <input id="filter-attack" type="number" pattern="[+]?[0-9]">
                 </label>
                 <label>
                     Shape<br>
-                    <input required id="filter-shape">
+                    <input required id="filter-shape" type="text">
                 </label>
-            <!-- <p id="button-div">
-                <button>Go!</button>
-            </p> -->
-        </section>
-        <!-- <hr> -->
+            </section>
         <div>
             <h2>Results:</h2>
+            <p id="total-count"></p>
+            <hr id="results-hr">
         </div>
-        <section id="results" style="overflow-y:scroll">
+        <section class="results" style="overflow-y:scroll">
             <table id="results-table">
                 <thead id="pokemon-header">
                     <tr id="column-headings">
-                        <td>Name</td>
-                        <td>Type 1</td>
-                        <td>Type 2</td>
-                        <td>Speed</td>
-                        <td>Attack</td>
-                        <td>Shape</td>
-                        <td>Image</td>
+                        <td class="headers">Name</td>
+                        <td class="headers">Type 1</td>
+                        <td class="headers">Type 2</td>
+                        <td class="headers">Speed</td>
+                        <td class="headers">Attack</td>
+                        <td class="headers">Shape</td>
+                        <td class="headers">Image</td>
                     </tr>
                 </thead>
                 <tbody id="pokemon-table-body">
                 </tbody>
             </table>
         </section>
-            <footer>
-                <h2><a href="#top">Back to Top</a></h2>
-            </footer>
     </main>
+    <footer>
+        <span>~ Scroll to view ~</span>
+        <span><a href="./#pokemon-header">Back to top</a></span>
+    </footer>
     <script type="module" src="js/app.js"></script>
 </body>
 </html>

@@ -1,42 +1,39 @@
 
 section#filter {
     background-color: yellowgreen;
+    padding-bottom: 12px;
+    outline: 2px solid yellowgreen;
     display: flex;
-    order: 1;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 10px;
     flex-flow: row wrap;
+}
+
+hr.purple {
+    border: 1px dashed purple;
+}
+
+hr.green {
+    border: 5px solid yellowgreen;
 }
 
 input {
     margin: 2px;
-    height: 2em;
+    height: 1em;
+    width: 7em;
     font-size: 18px;
 }
-
-/* #button-div {
-    display: inline-flex;
-    flex-flow: row;
-} */
 
 label {
     color: purple;
     font-style: italic;
 }
 
-/* button {
-
-    border-radius: 15px;
-    width: 4em;
-    font-size: 15px;
+p {
     color: purple;
-    margin-top: 3px;
-    border: 2px solid purple;
-    background-color: red;
-    justify-content: center;
+    text-align: center;
 }
 
-button:hover {
-    background: yellow;
-} */
+button {
+    display: block;
+}

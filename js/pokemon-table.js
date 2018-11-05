@@ -3,7 +3,7 @@ import html from './html.js';
 const tableBody = document.getElementById('pokemon-table-body');
 
 function makeRow(pokemon) {
-    return html`<tr id="column-headings">
+    return html`<tr id="pokemon-table-body">
         <td>${pokemon.pokemon}</td>
         <td>${pokemon.type_1}</td>
         <td>${pokemon.type_2}</td>
