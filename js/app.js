@@ -27,10 +27,10 @@ pokemonFilter.init(function(
                 || pokemon.pokemon.toLowerCase().includes(filterName);
 
             const hasType1 = !filterType1
-            || pokemon.type_1.toLowerCase().includes(filterName);
+            || pokemon.type_1.toLowerCase().includes(filterType1);
             
             const hasType2 = !filterType2
-            || pokemon.type_2.toLowerCase().includes(filterName);
+            || pokemon.type_2.toLowerCase().includes(filterType2);
 
             const hasAttack = !filterAttack
             || pokemon.attack >= filterAttack;
