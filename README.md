@@ -1,0 +1,1 @@
+Gotta pokemon.getAll();
