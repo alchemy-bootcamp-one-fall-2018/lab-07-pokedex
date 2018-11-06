@@ -1,10 +1,10 @@
 import pokeApi from './poke-api.js';
-import pokeTable from './pokemon-table.js';
+import PokeTable from './pokemon-table.js';
 import pokeFilter from './pokemon-filter.js';
 
 const pokemons = pokeApi.getAll();
 
-pokeTable.init(pokemons);
+PokeTable.init(pokemons);
 
 pokeFilter.init((nameFilter, attackFilter, defenseFilter, hpFilter) => {
     let filtered;
@@ -26,5 +26,5 @@ pokeFilter.init((nameFilter, attackFilter, defenseFilter, hpFilter) => {
     else {
         filtered = pokemons;
     }
-    pokeTable.update(filtered);
+    PokeTable.update(filtered);
 });
