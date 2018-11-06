@@ -10,7 +10,7 @@ pokemonTable.init(pokemons);
 pokemonFilter.init(function(pokemonFilter, type1Filter, type2Filter, ability1Filter, shapeFilter, attackFilter) {
     let filtered;
 
-    if(pokemonFilter || type1Filter || type2Filter || ability1Filter || shapeFilter) {
+    if(pokemonFilter || type1Filter || type2Filter || ability1Filter || shapeFilter || attackFilter) {
         pokemonFilter = pokemonFilter.toLowerCase();
         type1Filter = type1Filter.toLowerCase();
         type2Filter = type2Filter.toLowerCase();
@@ -31,7 +31,7 @@ pokemonFilter.init(function(pokemonFilter, type1Filter, type2Filter, ability1Fil
             const hasShape = !shapeFilter
                 || pokemon.shape.toLowerCase().includes(shapeFilter);
             const hasAttack = !attackFilter
-                || pokemon.attack.toLowerCase().includes(attackFilter);
+                || pokemon.attack >= attackFilter;
             
             return hasPokemon && hasType1 && hasType2 && hasAbility1 && hasShape && hasAttack;
             // instead of && make it ||

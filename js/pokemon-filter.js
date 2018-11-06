@@ -1,3 +1,5 @@
+/*eslint-disable no-console */
+
 const pokemonInput = document.getElementById('filter-name');
 const type_1Input = document.getElementById('filter-type-1');
 const type_2Input = document.getElementById('filter-type-2');
@@ -25,7 +27,8 @@ const pokemonFilter = {
         attackInput.addEventListener('keyup', function() {
             onFilter(pokemonInput.value, type_1Input.value, type_2Input.value, ability_1Input.value, shapeInput.value, attackInput.value);
         });
-        //console.log(pokemonFilter);
+        
+        console.log(onFilter);
     }
 };
 
