@@ -4,50 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pokemon Lab</title>
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
-    <!-- <link rel="stylesheet" href="css/pokemon-table.css"> --> --> -->
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/pokemon-table.css">
 </head>
 <body>
     <header>
-        <img class="assets" src="assets/Pokemon.jpg">
-        <h1>Pokemon Lab</h1>
+        
+        <h1>Pokedex</h1>
     </header>
-    
-    <main>    
-        <section id="filter" class="secondary">
-            <h2>Search for Pokemon</h2>
-            <label>
-                Name:
-                <input required id="filter-name">
-            </label>
-            <label>
-                Type:
-                <input required id="filter-type_1">
-            </label>
+    <img src="./assets/Pokemon.jpg" alt="pokemon with heart"> 
+    <main>
+        <section>
+            <label for="text">Pokemon: <input type="text" id="filter-name"/> </label>
+            <label for="number" id="numbers">Attack: <input type="number" id="filter-attack" min="1"></label>
+            <label for="number" id="numbers">Defense: <input type="number" id="filter-defense" min="1"></label>
+            <label for="number" id="numbers">HP: <input type="number" id="filter-hp" min="1"></label>
         </section>
 
         <section>
-            <h2>Pokemon</h2>
             <table>
-                <thead id="pokedex-header">
+                <thead id="poke-dex">
                     <tr>
-                        <td id="filter-pokemon" class="sort" data-property="pokemon">Name</td>
-                        <td class="sort" data-property="type_1">Type 1</td>
-                        <td class="sort" data-property="type_2">Type 2</td>
-                        <td class="sort" data-property="attack">Attack</td>
-                    
-
+                        <td>Photo</td>
+                        <td>Pokemon</td>
+                        <td>Type 1</td>
+                        <td>Type 2</td>                        
+                        <td>Attack</td>
+                        <td>Defense</td>
+                        <td>HP</td>
                     </tr>
                 </thead>
-                <tbody id="pokedex-body"></tbody>
+                <tbody id="table-body"></tbody>
             </table>
-        </section
-
+        </section>
     </main>
-
-    <script type="module" src="js/app.js"></script>
-    <script type="module" src="js/pokedex-api.js"></script>
-    <script type="module" src="js/pokedex-table.js"></script>
+    
 </body>
+
+<script type="module" src="js/app.js"></script>
+
+
 </html>
+
+
+
+

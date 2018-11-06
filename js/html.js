@@ -1,8 +1,3 @@
-// We are using a function called "html" because it
-// gives us syntax highlighting for html in our template
-// literal strings. After making the html string, it gets
-// transformed into DOM
-
 export default function html(strings, ...values) {
     // #1 Use the standard "built-in" template literal
     // function that interpolates (mixes in) the 
