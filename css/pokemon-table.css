@@ -1,0 +1,32 @@
+table {
+    width:100%;
+    border-collapse: collapse;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+thead{
+    font-size: 14px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+td {
+    padding: 7px 10px 7px 10px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+}
+
+#table-body {
+    text-transform: uppercase;
+}
+
+tr:nth-child(even){
+    background: #aaaaaa;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
