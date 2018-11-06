@@ -6,7 +6,8 @@ const pokeSpeed = document.getElementById('poke-speed');
 
 const pokeFilter = {
     init(onFilter) {
-        pokemonInput.addEventListener('keyup', function() { onFilter(pokemonInput.value, pokeType1.value, pokeType2.value, pokeShape.value, pokeSpeed.value); 
+        pokemonInput.addEventListener('keyup', function() { 
+            onFilter(pokemonInput.value, pokeType1.value, pokeType2.value, pokeShape.value, pokeSpeed.value); 
         });
     }    
     
