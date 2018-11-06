@@ -17,6 +17,7 @@ const pokeFilter = {
         defenseInput.addEventListener('keyup', () => {
             onFilter(nameInput.value, attackInput.value, defenseInput.value, hpInput.value);
         });
+        console.log('help me');
 
         hpInput.addEventListener('keyup', () => {
             onFilter(nameInput.value, attackInput.value, defenseInput.value, hpInput.value);
