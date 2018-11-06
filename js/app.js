@@ -6,13 +6,13 @@ const pokemons = pokeApi.getAll();
 
 pokeTable.init(pokemons);
 
-pokeFilter.init(function(nameFilter, attackFilter, defenseFilter, hpFilter) {
+pokeFilter.init((nameFilter, attackFilter, defenseFilter, hpFilter) => {
     let filtered;
 
     if(nameFilter || attackFilter || defenseFilter || hpFilter){
         nameFilter = nameFilter.toLowerCase();
 
-        filtered = pokemons.filter(function(pokemon){
+        filtered = pokemons.filter((pokemon) => {
             const hasName = !nameFilter
             || pokemon.pokemon.includes(nameFilter);
             

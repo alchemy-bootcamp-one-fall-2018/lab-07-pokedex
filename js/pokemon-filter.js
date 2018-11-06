@@ -6,19 +6,19 @@ const hpInput = document.getElementById('filter-hp');
 const pokeFilter = {
 
     init(onFilter) {
-        nameInput.addEventListener('keyup', function() {
+        nameInput.addEventListener('keyup', () => {
             onFilter(nameInput.value, attackInput.value, defenseInput.value, hpInput.value);
         });
 
-        attackInput.addEventListener('keyup', function() {
+        attackInput.addEventListener('keyup', () => {
             onFilter(nameInput.value, attackInput.value, defenseInput.value, hpInput.value);
         });
         
-        defenseInput.addEventListener('keyup', function() {
+        defenseInput.addEventListener('keyup', () => {
             onFilter(nameInput.value, attackInput.value, defenseInput.value, hpInput.value);
         });
 
-        hpInput.addEventListener('keyup', function() {
+        hpInput.addEventListener('keyup', () => {
             onFilter(nameInput.value, attackInput.value, defenseInput.value, hpInput.value);
         });
     }
