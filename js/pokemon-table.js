@@ -11,7 +11,7 @@ function makeRow(pokemon) {
         <td>${pokemon.type_2}</td>
         <td>${pokemon.ability_1}</td>
         <td>${pokemon.shape}</td>
-        <td>${pokemon.attack}</td>
+        <td class="attack">${pokemon.attack}</td>
     </tr>`;
 }
 
