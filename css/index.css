@@ -1,3 +1,25 @@
+table {
+    width:100%;
+    border-collapse: collapse;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+thead{
+    font-size: 20px;
+    background: yellow;
+    color: red;
+}
+td {
+    padding: 7px 0;
+    white-space: nowrap;
+}
+
+#table-body {
+    text-transform: uppercase;
+}
+
+
+
+
 image {
-    size: 30px;
+    size: 40px;
 }

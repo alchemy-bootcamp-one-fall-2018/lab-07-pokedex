@@ -23,5 +23,6 @@ pokeFilter.init(function(nameFilter, attackFilter, defenseFilter, hpFilter) {
     else {
         filtered = pokemons;
     }
+    
     pokeTable.update(filtered);
 });
