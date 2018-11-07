@@ -1,10 +1,11 @@
-import pokedex from './pokedex.js';
+import pokedex from './data/pokedex.js';
 
-const pokedexApi = {
+const pokeApi = {
     getAll() {
         return pokedex;
     }
 };
 
-export default pokedexApi;
+export default pokeApi;
+
 

@@ -4,7 +4,7 @@ const type_1Input = document.getElementById('filter-type_1');
 const type_2Input = document.getElementById('filter-type_2');
 const attackInput = document.getElementById('filter-attack');
 
-const pokedexFilter = {
+const pokeFilter = {
     // what does this component need from parent?
     init(onFilter) {
         nameInput.addEventListener('keyup', function() {
@@ -24,4 +24,4 @@ const pokedexFilter = {
 
 };
 
-export default pokedexFilter;
+export default pokeFilter;

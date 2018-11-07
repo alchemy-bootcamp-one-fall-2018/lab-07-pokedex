@@ -1,34 +1,27 @@
-import pokedexApi from './pokedex-api.js';
-import pokedexTable from './pokedex-table.js';
-import pokedexFilter from './pokedex-filter.js';
-
-const pokedex = pokedexApi.getAll();
-
-pokedexTable.init(pokedex);
+import pokeApi from './poke-api.js';
+import pokeTable from './pokemon-table.js';
+import pokeFilter from './pokemon-filter.js';
 
 
-// events up! (via callback)
-pokedexFilter.init(function(nameFilter) {
-    
+// events up, data down!
+const pokemons = pokeApi.getAll();
+pokeTable.init(pokemons);
+pokeFilter.init(function(nameFilter, attackFilter, defenseFilter, hpFilter) {
     let filtered;
-
-
-    if(nameFilter) {
-        // yes!, filter based on first or last name
+    if(nameFilter || attackFilter || defenseFilter || hpFilter){
         nameFilter = nameFilter.toLowerCase();
-    
-        filtered = pokedex.filter(function(pokemon) {
+        filtered = pokemons.filter(function(pokemon){
             const hasName = !nameFilter
-                || pokemon.name.toLowerCase().includes(nameFilter);
-               
-
-            return hasName;
+            || pokemon.pokemon.includes(nameFilter);
+            
+            const hasAttack = pokemon.attack >= attackFilter ? pokemon : !attackFilter;
+            const hasDefense = pokemon.defense >= defenseFilter ? pokemon : !defenseFilter;
+            const hasHp = pokemon.hp >= hpFilter ? pokemon : !hpFilter;
+            return hasName && hasAttack && hasDefense && hasHp;
         });
     }
     else {
-        filtered = pokedex;
+        filtered = pokemons;
     }
-
-
-    pokedexTable.update(filtered);
+    pokeTable.update(filtered);
 });
