@@ -6,8 +6,12 @@ import pokeFilter from './pokemon-filter.js';
 // events up, data down!
 const pokemons = pokeApi.getAll();
 pokeTable.init(pokemons);
-pokeFilter.init(function(nameFilter, attackFilter, defenseFilter, hpFilter) {
+pokeFilter.init(function(nameFilter, attackFilter, defenseFilter, hpFilter)
+{
     let filtered;
+    
+    // if, else statements
+
     if(nameFilter || attackFilter || defenseFilter || hpFilter){
         nameFilter = nameFilter.toLowerCase();
         filtered = pokemons.filter(function(pokemon){
