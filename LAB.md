@@ -7,6 +7,10 @@ The lab has lots of pokemon images plus a core data file located at `js/data/pok
 ## User Stories
 
 * Sees a table of pokemon data
+
+* Can filter on name and type (should filter both types)
+* Can click sortable columns to sort
+
 * Can filter on at least five properties
     * must include type (should filter both `type_1` and `type_2`)
     * include at least one number with "minimum" number filter
